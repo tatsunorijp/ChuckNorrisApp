@@ -1,0 +1,26 @@
+
+ strings:
+   inputs:
+     - ChuckNorrisApp/SupportFiles/Localizable.strings
+   outputs:
+     - templateName: structured-swift5
+       output: ChuckNorrisApp/Generated/Localizable.strings.swift
+
+ xcassets:
+   inputs:
+     - ChuckNorrisApp/SupportFiles/Assets.xcassets
+     - ChuckNorrisApp/SupportFiles/Colors.xcassets
+   outputs:
+     - templateName: swift5
+       params:
+         forceProvidesNamespaces: true
+       output: ChuckNorrisApp/Generated/XCAssets+Generated.swift
+
+## There are other parsers available for you to use depending on your needs, for example:
+##  - `fonts` (if you have custom ttf/ttc font files)
+##  - `coredata` (for CoreData models)
+##  - `json`, `yaml` and `plist` (to parse custom JSON/YAML/Plist files and generate code from their content)
+## …
+##
+## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
+## https://github.com/SwiftGen/SwiftGen/tree/6.4.0/Documentation/
