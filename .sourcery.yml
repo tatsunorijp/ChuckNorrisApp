@@ -3,4 +3,4 @@ sources:
     - ChuckNorrisApp
 templates:
     - ChuckNorrisApp/SupportFiles/AutoMockable.stencil
-output: BaseMVVM/Generated
+output: ChuckNorrisApp/Generated
