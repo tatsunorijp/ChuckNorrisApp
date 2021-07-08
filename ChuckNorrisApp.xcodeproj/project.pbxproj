@@ -25,6 +25,8 @@
 		0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */; };
 		0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */; };
 		0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DF726974B7500803723 /* TopRoundedView.swift */; };
+		0E053DFC2697511100803723 /* FactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DFA2697511100803723 /* FactsCell.swift */; };
+		0E053DFD2697511100803723 /* FactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E053DFB2697511100803723 /* FactsCell.xib */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 		0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewModel.swift; sourceTree = "<group>"; };
 		0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChuckNorrisFactsViewController.xib; sourceTree = "<group>"; };
 		0E053DF726974B7500803723 /* TopRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundedView.swift; sourceTree = "<group>"; };
+		0E053DFA2697511100803723 /* FactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCell.swift; sourceTree = "<group>"; };
+		0E053DFB2697511100803723 /* FactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCell.xib; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		0E053DE8269733D500803723 /* ChuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
+				0E053DF9269750E900803723 /* Cells */,
 				0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */,
 				0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */,
 				0E053DEB2697340000803723 /* ChuckNorrisFactsBuilder.swift */,
@@ -231,6 +236,15 @@
 				0E053DF726974B7500803723 /* TopRoundedView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0E053DF9269750E900803723 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0E053DFA2697511100803723 /* FactsCell.swift */,
+				0E053DFB2697511100803723 /* FactsCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		0EE441CA26963F4B0093A9FA = {
@@ -502,6 +516,7 @@
 				0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */,
 				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
 				0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */,
+				0E053DFD2697511100803723 /* FactsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +742,7 @@
 				0EE44215269642BA0093A9FA /* Builder.swift in Sources */,
 				087021B12696558C00117B68 /* NavigationController.swift in Sources */,
 				087021AF2696558C00117B68 /* LoadingView.swift in Sources */,
+				0E053DFC2697511100803723 /* FactsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

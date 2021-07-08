@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChuckNorrisFactsViewController" customModule="ChuckNorrisApp" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="NHd-SJ-Qdc" id="egP-bH-UA3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +22,25 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqN-Aq-0Kd" customClass="TopRoundedView" customModule="ChuckNorrisApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="60" width="414" height="836"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NHd-SJ-Qdc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qAy-W0-9MG">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NHd-SJ-Qdc" firstAttribute="leading" secondItem="LqN-Aq-0Kd" secondAttribute="leading" id="9NW-xq-b6y"/>
+                        <constraint firstAttribute="trailing" secondItem="NHd-SJ-Qdc" secondAttribute="trailing" id="TsE-oO-bLh"/>
+                        <constraint firstItem="NHd-SJ-Qdc" firstAttribute="top" secondItem="LqN-Aq-0Kd" secondAttribute="top" id="m0m-J5-141"/>
+                        <constraint firstAttribute="bottom" secondItem="NHd-SJ-Qdc" secondAttribute="bottom" id="wYY-KV-shL"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

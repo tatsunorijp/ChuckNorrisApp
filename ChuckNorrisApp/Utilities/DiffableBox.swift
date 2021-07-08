@@ -10,7 +10,7 @@
 import Foundation
 import IGListKit
 
-private final class DiffableBox<T>: ListDiffable {
+final class DiffableBox<T>: ListDiffable {
     
     let value: T
     let identifier: NSObjectProtocol
