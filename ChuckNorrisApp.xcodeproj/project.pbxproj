@@ -13,10 +13,18 @@
 		087021AE2696558C00117B68 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087021A62696558C00117B68 /* LoadingView.xib */; };
 		087021AF2696558C00117B68 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A72696558C00117B68 /* LoadingView.swift */; };
 		087021B02696558C00117B68 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A92696558C00117B68 /* BaseButton.swift */; };
-		087021B12696558C00117B68 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021AB2696558C00117B68 /* BaseNavigationController.swift */; };
+		087021B12696558C00117B68 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021AB2696558C00117B68 /* NavigationController.swift */; };
 		087021B52696924900117B68 /* DiffableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B42696924900117B68 /* DiffableBox.swift */; };
 		087021BA269699DD00117B68 /* TestSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */; };
 		087021BB269699DD00117B68 /* TestSceneViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */; };
+		0E053DE72697336500803723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441E126963F4E0093A9FA /* LaunchScreen.storyboard */; };
+		0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */; };
+		0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */; };
+		0E053DF12697340000803723 /* ChuckNorrisFactsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DEB2697340000803723 /* ChuckNorrisFactsBuilder.swift */; };
+		0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DEC2697340000803723 /* ChuckNorrisFactsInteractor.swift */; };
+		0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */; };
+		0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */; };
+		0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DF726974B7500803723 /* TopRoundedView.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -31,12 +39,6 @@
 		0EE4421D269643280093A9FA /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4421A269643280093A9FA /* UIViewController+Rx.swift */; };
 		0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4421E269643570093A9FA /* ActivityIndicator.swift */; };
 		0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4421F269643570093A9FA /* ErrorTracker.swift */; };
-		0EE44228269644F30093A9FA /* TestSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE44222269644F30093A9FA /* TestSceneRouter.swift */; };
-		0EE44229269644F30093A9FA /* TestSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE44223269644F30093A9FA /* TestSceneViewController.swift */; };
-		0EE4422A269644F30093A9FA /* TestSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE44224269644F30093A9FA /* TestSceneBuilder.swift */; };
-		0EE4422B269644F30093A9FA /* TestSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE44225269644F30093A9FA /* TestSceneInteractor.swift */; };
-		0EE4422C269644F30093A9FA /* TestSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE44226269644F30093A9FA /* TestSceneViewModel.swift */; };
-		0EE4422D269644F30093A9FA /* TestSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE44227269644F30093A9FA /* TestSceneViewController.xib */; };
 		0EE44230269646DA0093A9FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EE4422F269646DA0093A9FA /* Localizable.strings */; };
 		0EE44234269647620093A9FA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE44233269647620093A9FA /* Colors.xcassets */; };
 		0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 0EE44235269648130093A9FA /* AutoMockable.stencil */; };
@@ -71,10 +73,17 @@
 		087021A62696558C00117B68 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		087021A72696558C00117B68 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		087021A92696558C00117B68 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
-		087021AB2696558C00117B68 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		087021AB2696558C00117B68 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		087021B42696924900117B68 /* DiffableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBox.swift; sourceTree = "<group>"; };
 		087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneInteractorTests.swift; sourceTree = "<group>"; };
 		087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneViewModelTests.swift; sourceTree = "<group>"; };
+		0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsRouter.swift; sourceTree = "<group>"; };
+		0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewController.swift; sourceTree = "<group>"; };
+		0E053DEB2697340000803723 /* ChuckNorrisFactsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsBuilder.swift; sourceTree = "<group>"; };
+		0E053DEC2697340000803723 /* ChuckNorrisFactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsInteractor.swift; sourceTree = "<group>"; };
+		0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewModel.swift; sourceTree = "<group>"; };
+		0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChuckNorrisFactsViewController.xib; sourceTree = "<group>"; };
+		0E053DF726974B7500803723 /* TopRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundedView.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,12 +105,6 @@
 		0EE4421A269643280093A9FA /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		0EE4421E269643570093A9FA /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		0EE4421F269643570093A9FA /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
-		0EE44222269644F30093A9FA /* TestSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneRouter.swift; sourceTree = "<group>"; };
-		0EE44223269644F30093A9FA /* TestSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneViewController.swift; sourceTree = "<group>"; };
-		0EE44224269644F30093A9FA /* TestSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneBuilder.swift; sourceTree = "<group>"; };
-		0EE44225269644F30093A9FA /* TestSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneInteractor.swift; sourceTree = "<group>"; };
-		0EE44226269644F30093A9FA /* TestSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneViewModel.swift; sourceTree = "<group>"; };
-		0EE44227269644F30093A9FA /* TestSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSceneViewController.xib; sourceTree = "<group>"; };
 		0EE4422F269646DA0093A9FA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0EE44233269647620093A9FA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0EE44235269648130093A9FA /* AutoMockable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoMockable.stencil; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		087021A12696554C00117B68 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0E053DF626974B5C00803723 /* View */,
 				087021A82696558C00117B68 /* Button */,
 				087021A52696558C00117B68 /* LoadingView */,
 				087021AA2696558C00117B68 /* NavigationController */,
@@ -186,7 +190,7 @@
 		087021AA2696558C00117B68 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				087021AB2696558C00117B68 /* BaseNavigationController.swift */,
+				087021AB2696558C00117B68 /* NavigationController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -206,6 +210,27 @@
 				087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		0E053DE8269733D500803723 /* ChuckNorrisFacts */ = {
+			isa = PBXGroup;
+			children = (
+				0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */,
+				0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */,
+				0E053DEB2697340000803723 /* ChuckNorrisFactsBuilder.swift */,
+				0E053DEC2697340000803723 /* ChuckNorrisFactsInteractor.swift */,
+				0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */,
+				0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */,
+			);
+			path = ChuckNorrisFacts;
+			sourceTree = "<group>";
+		};
+		0E053DF626974B5C00803723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E053DF726974B7500803723 /* TopRoundedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0EE441CA26963F4B0093A9FA = {
@@ -233,14 +258,14 @@
 		0EE441D526963F4B0093A9FA /* ChuckNorrisApp */ = {
 			isa = PBXGroup;
 			children = (
-				087021A12696554C00117B68 /* Components */,
-				0EE44207269641D80093A9FA /* MVVM+RIB */,
-				0EE4420C2696420D0093A9FA /* Scenes */,
-				0EE4420B269642040093A9FA /* Utilities */,
-				0EE4420A269641FB0093A9FA /* Extensions */,
-				0EE44209269641F50093A9FA /* Generated */,
-				0EE44208269641EB0093A9FA /* SupportFiles */,
 				0EE44206269641C70093A9FA /* Application */,
+				0EE44207269641D80093A9FA /* MVVM+RIB */,
+				0EE44209269641F50093A9FA /* Generated */,
+				0EE4420A269641FB0093A9FA /* Extensions */,
+				0EE44208269641EB0093A9FA /* SupportFiles */,
+				0EE4420B269642040093A9FA /* Utilities */,
+				0EE4420C2696420D0093A9FA /* Scenes */,
+				087021A12696554C00117B68 /* Components */,
 				0EE441E426963F4E0093A9FA /* Info.plist */,
 			);
 			path = ChuckNorrisApp;
@@ -330,22 +355,9 @@
 		0EE4420C2696420D0093A9FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0EE4422E269644FB0093A9FA /* TestScene */,
+				0E053DE8269733D500803723 /* ChuckNorrisFacts */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		0EE4422E269644FB0093A9FA /* TestScene */ = {
-			isa = PBXGroup;
-			children = (
-				0EE44222269644F30093A9FA /* TestSceneRouter.swift */,
-				0EE44223269644F30093A9FA /* TestSceneViewController.swift */,
-				0EE44224269644F30093A9FA /* TestSceneBuilder.swift */,
-				0EE44225269644F30093A9FA /* TestSceneInteractor.swift */,
-				0EE44226269644F30093A9FA /* TestSceneViewModel.swift */,
-				0EE44227269644F30093A9FA /* TestSceneViewController.xib */,
-			);
-			path = TestScene;
 			sourceTree = "<group>";
 		};
 		76B273559B9148A63482261D /* Frameworks */ = {
@@ -484,10 +496,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE44234269647620093A9FA /* Colors.xcassets in Resources */,
-				0EE4422D269644F30093A9FA /* TestSceneViewController.xib in Resources */,
 				0EE44230269646DA0093A9FA /* Localizable.strings in Resources */,
 				087021AE2696558C00117B68 /* LoadingView.xib in Resources */,
+				0E053DE72697336500803723 /* LaunchScreen.storyboard in Resources */,
 				0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */,
+				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
 				0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,12 +701,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE4421D269643280093A9FA /* UIViewController+Rx.swift in Sources */,
-				0EE4422A269644F30093A9FA /* TestSceneBuilder.swift in Sources */,
 				0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */,
 				0EE4421B269643280093A9FA /* NibLoadable.swift in Sources */,
 				0EE44214269642BA0093A9FA /* BaseInteractor.swift in Sources */,
 				0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */,
-				0EE44229269644F30093A9FA /* TestSceneViewController.swift in Sources */,
 				087021AD2696558C00117B68 /* RoundedTextField.swift in Sources */,
 				0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */,
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
@@ -701,17 +712,20 @@
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
 				0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */,
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
+				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
+				0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */,
 				0EE4423C26964D020093A9FA /* XCAssets+Generated.swift in Sources */,
 				087021B52696924900117B68 /* DiffableBox.swift in Sources */,
-				0EE44228269644F30093A9FA /* TestSceneRouter.swift in Sources */,
+				0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */,
 				0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */,
-				0EE4422B269644F30093A9FA /* TestSceneInteractor.swift in Sources */,
+				0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */,
 				0EE4423B26964D020093A9FA /* Localizable.strings.swift in Sources */,
+				0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */,
 				0EE44216269642BA0093A9FA /* Router.swift in Sources */,
-				0EE4422C269644F30093A9FA /* TestSceneViewModel.swift in Sources */,
+				0E053DF12697340000803723 /* ChuckNorrisFactsBuilder.swift in Sources */,
 				0EE44215269642BA0093A9FA /* Builder.swift in Sources */,
-				087021B12696558C00117B68 /* BaseNavigationController.swift in Sources */,
+				087021B12696558C00117B68 /* NavigationController.swift in Sources */,
 				087021AF2696558C00117B68 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

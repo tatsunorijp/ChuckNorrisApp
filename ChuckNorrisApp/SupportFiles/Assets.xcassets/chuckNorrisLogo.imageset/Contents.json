@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "chuckNorrisLogo.png",
       "idiom" : "universal"
     }
   ],

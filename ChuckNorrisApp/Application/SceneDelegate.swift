@@ -18,7 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let windowScene: UIWindowScene = scene as! UIWindowScene
         self.window = UIWindow(windowScene: windowScene)
-        self.window!.rootViewController = TestSceneBuilder().build()
+        self.window!.rootViewController = NavigationController(
+            rootViewController: ChuckNorrisFactsBuilder().build()
+        )
         self.window!.makeKeyAndVisible()
         
         // swiftlint:disable:next unused_optional_binding

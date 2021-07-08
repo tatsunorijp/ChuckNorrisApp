@@ -1,4 +1,4 @@
-// Generated using Sourcery 1.3.4 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 1.4.2 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 // Template copiado de:
 // https://github.com/krzysztofzablocki/Sourcery
@@ -28,6 +28,3 @@ import AppKit
 
 
 
-class TestSceneInteractableMock: TestSceneInteractable {
-
-}

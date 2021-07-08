@@ -41,6 +41,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         prepare()
         bindViewModel()
+        configureNavigationBar()
         super.viewDidLoad()
     }
     
@@ -65,26 +66,32 @@ class BaseViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
+    final func configureNavigationBar() {
+        guard let navigationController = navigationController else { return }
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.barStyle = .black
+        navigationController.navigationBar.barTintColor = Asset.Colors.orange400.color
+        navigationController.navigationBar.backgroundColor = Asset.Colors.orange400.color
+        navigationController.navigationBar.tintColor = Asset.Colors.white.color
+        navigationController.navigationBar.titleTextAttributes = [
+            .foregroundColor: Asset.Colors.white.color,
+            .font: UIFont.systemFont(ofSize: 20, weight: .semibold)
+        ]
+    }
+    
     func createLoadingViewController() -> UIViewController {
         let loadingView = UIViewController()
         return loadingView
     }
     
-    func showLoading() {
-        add(loadingViewController)
-        // adicionar constrainst "edges to superview"
-    }
-    
-    func hideLoading() {
-        loadingViewController.removeFromParent()
-    }
-    
     func handleLoadingView(_ isLoading: Bool) {
         if isLoading {
             view.endEditing(true)
-            showLoading()
+            add(loadingViewController)
+            // adicionar constrainst "edges to superview"
         } else {
-            hideLoading()
+            loadingViewController.removeFromParent()
         }
     }
     
@@ -112,10 +119,6 @@ class BaseViewController: UIViewController {
         let contentInsets = UIEdgeInsets.zero
         internalScrollView?.contentInset = contentInsets
         internalScrollView?.scrollIndicatorInsets = contentInsets
-    }
-    
-    private func doSomething() {
-        print("do something")
     }
 }
 

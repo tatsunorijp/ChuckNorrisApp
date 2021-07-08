@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChuckNorrisFactsViewController" customModule="ChuckNorrisApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqN-Aq-0Kd" customClass="TopRoundedView" customModule="ChuckNorrisApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="60" width="414" height="836"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Orange400"/>
+            <constraints>
+                <constraint firstItem="LqN-Aq-0Kd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="459-PV-KMf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LqN-Aq-0Kd" secondAttribute="trailing" id="Oyl-Yu-Bpf"/>
+                <constraint firstAttribute="bottom" secondItem="LqN-Aq-0Kd" secondAttribute="bottom" id="SeM-nN-BV8"/>
+                <constraint firstItem="LqN-Aq-0Kd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ZWV-uh-O5v"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Orange400">
+            <color red="1" green="0.45098039215686275" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
