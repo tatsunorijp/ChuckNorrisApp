@@ -27,25 +27,13 @@ final class ChuckNorrisFactsViewController: BaseViewController {
         return adapter
     }()
     
+    var chuckNorrisFacts: [ChuckNorrisFactsViewModel.DisplayableModel] = []
+    
     init(withViewModel viewModel: ChuckNorrisFactsViewModelType, router: ChuckNorrisFactsRouting) {
         self.viewModel = viewModel
         self.router = router
         super.init(nibName: nil, bundle: nil)
     }
-    
-    private let factsMock = [
-        "Fato1",
-        "Fato2",
-        "Fato3",
-        "Fato4",
-        "Fato5",
-        "Fato6",
-        "Fato7",
-        "Fato8",
-        "Fato9",
-        "Fato10",
-        "Fato11",
-    ]
 
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -53,7 +41,18 @@ final class ChuckNorrisFactsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.input.didSearchTextChange.onNext("nada mock")
+    }
+    
+    override func bindViewModel() {
+        super.bindViewModel()
         
+        viewModel.output.encounteredFacts
+            .drive { [weak self] facts in
+                self?.chuckNorrisFacts = facts
+                self?.adapter.performUpdates(animated: true, completion: nil)
+            }
+            .disposed(by: disposeBag)
     }
     
     override func prepare() {
@@ -73,7 +72,7 @@ final class ChuckNorrisFactsViewController: BaseViewController {
     }
     
     @objc private func navigateToSearch() {
-        
+        Alert.show(in: self, title: "Em produção", message: "Esta funcionalidade ainda não está pronta e será entregue proximamente.")
     }
 }
 
@@ -81,8 +80,8 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         var items: [ListDiffable] = []
         
-        for fact in factsMock {
-            items.append(DiffableBox(value: fact, identifier: fact as NSObjectProtocol))
+        for fact in chuckNorrisFacts {
+            items.append(DiffableBox(value: fact, identifier: fact.id as NSObjectProtocol))
         }
         
         return items
