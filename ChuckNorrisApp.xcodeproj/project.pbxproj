@@ -14,10 +14,12 @@
 		087021AF2696558C00117B68 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A72696558C00117B68 /* LoadingView.swift */; };
 		087021B02696558C00117B68 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A92696558C00117B68 /* BaseButton.swift */; };
 		087021B12696558C00117B68 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021AB2696558C00117B68 /* BaseNavigationController.swift */; };
+		087021B52696924900117B68 /* DiffableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B42696924900117B68 /* DiffableBox.swift */; };
+		087021BA269699DD00117B68 /* TestSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */; };
+		087021BB269699DD00117B68 /* TestSceneViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
-		0EE441EE26963F4E0093A9FA /* ChuckNorrisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441ED26963F4E0093A9FA /* ChuckNorrisAppTests.swift */; };
 		0EE441F926963F4F0093A9FA /* ChuckNorrisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441F826963F4F0093A9FA /* ChuckNorrisAppUITests.swift */; };
 		0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4420E269642BA0093A9FA /* BaseViewController.swift */; };
 		0EE44214269642BA0093A9FA /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4420F269642BA0093A9FA /* BaseInteractor.swift */; };
@@ -70,6 +72,9 @@
 		087021A72696558C00117B68 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		087021A92696558C00117B68 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		087021AB2696558C00117B68 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		087021B42696924900117B68 /* DiffableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBox.swift; sourceTree = "<group>"; };
+		087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneInteractorTests.swift; sourceTree = "<group>"; };
+		087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneViewModelTests.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +82,6 @@
 		0EE441E226963F4E0093A9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EE441E426963F4E0093A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EE441E926963F4E0093A9FA /* ChuckNorrisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckNorrisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EE441ED26963F4E0093A9FA /* ChuckNorrisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisAppTests.swift; sourceTree = "<group>"; };
 		0EE441EF26963F4E0093A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EE441F426963F4F0093A9FA /* ChuckNorrisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckNorrisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441F826963F4F0093A9FA /* ChuckNorrisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisAppUITests.swift; sourceTree = "<group>"; };
@@ -187,6 +191,23 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		087021B6269699B900117B68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				087021B7269699C000117B68 /* Test */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		087021B7269699C000117B68 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */,
+				087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		0EE441CA26963F4B0093A9FA = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +249,7 @@
 		0EE441EC26963F4E0093A9FA /* ChuckNorrisAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0EE441ED26963F4E0093A9FA /* ChuckNorrisAppTests.swift */,
+				087021B6269699B900117B68 /* Scenes */,
 				0EE441EF26963F4E0093A9FA /* Info.plist */,
 			);
 			path = ChuckNorrisAppTests;
@@ -301,6 +322,7 @@
 			children = (
 				0EE4421E269643570093A9FA /* ActivityIndicator.swift */,
 				0EE4421F269643570093A9FA /* ErrorTracker.swift */,
+				087021B42696924900117B68 /* DiffableBox.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -361,6 +383,7 @@
 				0EE4423826964BF00093A9FA /* Sourcery */,
 				0EE441CF26963F4B0093A9FA /* Sources */,
 				0EE441D026963F4B0093A9FA /* Frameworks */,
+				087021B326968BE400117B68 /* Swiftlint */,
 				0EE441D126963F4B0093A9FA /* Resources */,
 				668E73617AE9A5D09A9938E9 /* [CP] Embed Pods Frameworks */,
 			);
@@ -486,6 +509,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		087021B326968BE400117B68 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed!!\"\nfi\n";
+		};
 		0ECBB3229904945F81595AFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -662,6 +703,7 @@
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
 				0EE4423C26964D020093A9FA /* XCAssets+Generated.swift in Sources */,
+				087021B52696924900117B68 /* DiffableBox.swift in Sources */,
 				0EE44228269644F30093A9FA /* TestSceneRouter.swift in Sources */,
 				0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */,
 				0EE4422B269644F30093A9FA /* TestSceneInteractor.swift in Sources */,
@@ -678,7 +720,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE441EE26963F4E0093A9FA /* ChuckNorrisAppTests.swift in Sources */,
+				087021BA269699DD00117B68 /* TestSceneInteractorTests.swift in Sources */,
+				087021BB269699DD00117B68 /* TestSceneViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

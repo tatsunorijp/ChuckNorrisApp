@@ -8,7 +8,7 @@
 import Foundation
 
 protocol BaseViewModelInput: AnyObject { }
-protocol  BaseViewModelOutput: AnyObject { }
+protocol BaseViewModelOutput: AnyObject { }
 
 protocol BaseViewModelType: AnyObject {
     var input: BaseViewModelInput { get }
@@ -21,7 +21,7 @@ final class BaseViewModel: BaseViewModelType, BaseViewModelInput, BaseViewModelO
     
     init(interactor: BaseInteractable) { }
     
-    //outputs
+    // outputs
     // ...
     var input: BaseViewModelInput { return self }
     var output: BaseViewModelOutput { return self }

@@ -43,4 +43,3 @@ public extension ObservableConvertibleType {
         return errorTracker.trackError(from: self)
     }
 }
-

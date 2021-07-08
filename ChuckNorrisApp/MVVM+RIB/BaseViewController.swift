@@ -95,7 +95,6 @@ class BaseViewController: UIViewController {
         Alert.show(in: self, title: "titulo do erro", message: "menssagem de erro")
     }
 
-    
     func keyboardWillAppear(with size: CGSize, duration: TimeInterval) {
         let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: size.height + 16, right: 0)
         internalScrollView?.contentInset = contentInsets

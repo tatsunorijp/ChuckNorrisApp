@@ -41,12 +41,12 @@ public extension ObservableType where Element == Bool {
 }
 
 public extension ObservableType {
-
-    func catchErrorJustComplete() -> Observable<Element> {
-        return catchError { _ in
-            return Observable.empty()
-        }
-    }
+    // TODO: Acho que a seguinte função nunca será usada
+//    func catchErrorJustComplete() -> Observable<Element> {
+//        return catchError { _ in
+//            return Observable.empty()
+//        }
+//    }
 
     func asDriverOnErrorJustComplete() -> Driver<Element> {
         return asDriver { _ in

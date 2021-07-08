@@ -10,6 +10,8 @@ target 'ChuckNorrisApp' do
 	pod 'RxCocoa'
 	pod 'SwiftGen'
 	pod 'Sourcery'
+	pod 'SwiftLint'
+	pod 'IGListKit'
 
   target 'ChuckNorrisAppTests' do
     inherit! :search_paths

@@ -17,7 +17,7 @@ class BaseButton: UIButton {
         var icon: UIImage?
     }
     
-    public let isLoading = BehaviorRelay(value: false)
+    let isLoading = BehaviorRelay(value: false)
     private let disposeBag = DisposeBag()
     
     private lazy var buttonState: ButtonState = {
