@@ -20,6 +20,34 @@
                ReferencedContainer = "container:ChuckNorrisApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0EE441F326963F4F0093A9FA"
+               BuildableName = "ChuckNorrisAppUITests.xctest"
+               BlueprintName = "ChuckNorrisAppUITests"
+               ReferencedContainer = "container:ChuckNorrisApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0EE441E826963F4E0093A9FA"
+               BuildableName = "ChuckNorrisAppTests.xctest"
+               BlueprintName = "ChuckNorrisAppTests"
+               ReferencedContainer = "container:ChuckNorrisApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,9 +60,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EE441F326963F4F0093A9FA"
-               BuildableName = "ChuckNorrisAppUITests.xctest"
-               BlueprintName = "ChuckNorrisAppUITests"
+               BlueprintIdentifier = "0EE441E826963F4E0093A9FA"
+               BuildableName = "ChuckNorrisAppTests.xctest"
+               BlueprintName = "ChuckNorrisAppTests"
                ReferencedContainer = "container:ChuckNorrisApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
