@@ -16,7 +16,7 @@ final class ChuckNorrisFactsBuilder: Builder, ChuckNorrisFactsBuildable {
     func build() -> UIViewController {
         let interactor = ChuckNorrisFactsInteractor()
         let viewModel = ChuckNorrisFactsViewModel(interactor: interactor)
-        let router = ChuckNorrisFactsRouter()
+        let router = ChuckNorrisFactsRouter(searchFactsBuilder: SearchFactsBuilder())
         let viewController = ChuckNorrisFactsViewController(withViewModel: viewModel, router: router)
         router.viewController = viewController
 

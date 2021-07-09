@@ -94,7 +94,7 @@ final class ChuckNorrisFactsViewController: BaseViewController {
     }
     
     @objc private func navigateToSearch() {
-        Alert.show(in: self, title: "Em produção", message: "Esta funcionalidade ainda não está pronta e será entregue proximamente.")
+        router.navigateToSearch(delegate: self)
     }
 }
 
@@ -119,6 +119,10 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
-    
-    
+}
+
+extension ChuckNorrisFactsViewController: SearchFactsDelegate {
+    func searchFacts(term: String) {
+        print(term)
+    }
 }

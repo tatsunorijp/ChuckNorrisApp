@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchFactsViewController" customModule="ChuckNorrisApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButtonConstraint" destination="9nj-yf-KkG" id="TGZ-OR-DOd"/>
+                <outlet property="scrollView" destination="Cq4-oe-SYl" id="Y3X-lV-Lxo"/>
+                <outlet property="searchButton" destination="TXB-ZO-soF" id="3Gk-Tj-yrw"/>
+                <outlet property="searchLabel" destination="ggg-pp-VNd" id="039-lH-Wyd"/>
+                <outlet property="textField" destination="Cop-Jr-klT" id="Wzt-1d-Qcd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-0N-7au" customClass="TopRoundedView" customModule="ChuckNorrisApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="60" width="414" height="836"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-oe-SYl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wof-BK-lrm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggg-pp-VNd">
+                                            <rect key="frame" x="32" y="32" width="350" height="25.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                            <color key="textColor" name="Orange400"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cop-Jr-klT" customClass="LineTextField" customModule="ChuckNorrisApp" customModuleProvider="target">
+                                            <rect key="frame" x="32" y="89.5" width="350" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXB-ZO-soF" customClass="PrimaryButton" customModule="ChuckNorrisApp" customModuleProvider="target">
+                                            <rect key="frame" x="32" y="740" width="350" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ggg-pp-VNd" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="03s-SR-pH1"/>
+                                        <constraint firstItem="Cop-Jr-klT" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="5wE-RJ-fwb"/>
+                                        <constraint firstAttribute="bottom" secondItem="TXB-ZO-soF" secondAttribute="bottom" constant="32" id="9nj-yf-KkG"/>
+                                        <constraint firstAttribute="trailing" secondItem="Cop-Jr-klT" secondAttribute="trailing" constant="32" id="BTA-DZ-EmK"/>
+                                        <constraint firstItem="TXB-ZO-soF" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="Bar-k8-9dM"/>
+                                        <constraint firstItem="TXB-ZO-soF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cop-Jr-klT" secondAttribute="bottom" constant="32" id="Khf-gS-cP0"/>
+                                        <constraint firstItem="ggg-pp-VNd" firstAttribute="top" secondItem="Wof-BK-lrm" secondAttribute="top" constant="32" id="NPT-2o-y6e"/>
+                                        <constraint firstAttribute="trailing" secondItem="TXB-ZO-soF" secondAttribute="trailing" constant="32" id="jMZ-aw-hYZ"/>
+                                        <constraint firstItem="Cop-Jr-klT" firstAttribute="top" secondItem="ggg-pp-VNd" secondAttribute="bottom" constant="32" id="mvi-La-khe"/>
+                                        <constraint firstAttribute="trailing" secondItem="ggg-pp-VNd" secondAttribute="trailing" constant="32" id="xTl-px-T0l"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Wof-BK-lrm" firstAttribute="top" secondItem="mo0-cQ-du8" secondAttribute="top" id="DCX-Y6-5b9"/>
+                                <constraint firstItem="Wof-BK-lrm" firstAttribute="leading" secondItem="mo0-cQ-du8" secondAttribute="leading" id="GKN-lO-vug"/>
+                                <constraint firstItem="Wof-BK-lrm" firstAttribute="trailing" secondItem="mo0-cQ-du8" secondAttribute="trailing" id="LOy-I7-KbS"/>
+                                <constraint firstItem="Wof-BK-lrm" firstAttribute="bottom" secondItem="mo0-cQ-du8" secondAttribute="bottom" id="dT2-2w-5cZ"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="mo0-cQ-du8"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="LUR-42-w4U"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Cq4-oe-SYl" secondAttribute="bottom" id="Ib9-Ur-5gJ"/>
+                        <constraint firstItem="Cq4-oe-SYl" firstAttribute="leading" secondItem="a4o-0N-7au" secondAttribute="leading" id="TAt-kb-cdZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Cq4-oe-SYl" secondAttribute="trailing" id="bFP-mH-FSV"/>
+                        <constraint firstItem="Cq4-oe-SYl" firstAttribute="top" secondItem="a4o-0N-7au" secondAttribute="top" id="ttI-he-3Zx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Orange400"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a4o-0N-7au" secondAttribute="bottom" id="KjZ-ZD-MDV"/>
+                <constraint firstItem="a4o-0N-7au" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="UnE-xL-x3a"/>
+                <constraint firstItem="Wof-BK-lrm" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="500" constant="-16" id="hf6-Gf-BwP"/>
+                <constraint firstItem="Wof-BK-lrm" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="iff-pj-9bP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4o-0N-7au" secondAttribute="trailing" id="tt6-Ys-8G3"/>
+                <constraint firstItem="a4o-0N-7au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vwi-PD-sby"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Orange400">
+            <color red="1" green="0.45098039215686275" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

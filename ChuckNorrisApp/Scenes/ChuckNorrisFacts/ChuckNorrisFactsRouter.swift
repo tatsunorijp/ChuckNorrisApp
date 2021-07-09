@@ -9,21 +9,22 @@
 import UIKit
 
 protocol ChuckNorrisFactsRouting: AnyObject {
-    // Declare methods to navigate to other scenes
-    // func navigateToOtherScene()
+    func navigateToSearch(delegate: SearchFactsDelegate)
 }
 
 final class ChuckNorrisFactsRouter: Router, ChuckNorrisFactsRouting {
-    /* All the builders needed when navigating must be passed as parameters in the constructor.
-     init(otherSceneBuilder: OtherSceneBuildable) {
-     self.otherSceneBuilder = otherSceneBuilder
-     }
-
-     func navigateToOtherScene() {
-     let otherScene = otherSceneBuilder.build()
-     viewController.navigationController.pushViewController(otherScene, animated: true)
-     }
-
-     private let otherSceneBuilder: OtherSceneBuildable
-     */
+    let searchFactsBuilder: SearchFactsBuildable
+    
+    init(searchFactsBuilder: SearchFactsBuildable) {
+        self.searchFactsBuilder = searchFactsBuilder
+    }
+    
+    func navigateToSearch(delegate: SearchFactsDelegate) {
+        let searchViewController = searchFactsBuilder.build() as! SearchFactsViewController
+        searchViewController.setDelegate(delegate)
+        viewController.navigationController?.pushViewController(
+            searchViewController,
+            animated: true
+        )
+    }
 }

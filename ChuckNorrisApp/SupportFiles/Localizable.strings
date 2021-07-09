@@ -5,6 +5,14 @@
   Created by Tatsu on 07/07/21.
   
 */
-
+/*ChuckNorrisFacts*/
 "ChuckNorrisFacts.Title" = "Chuck Norris Facts";
 "ChuckNorrisFacts.Button.More" = "More";
+/*ChuckNorrisFacts*/
+
+/*SearchFacts*/
+"SearchFacts.Title" = "Search";
+"SearchFacts.Button.Search" = "SEARCH";
+"SearchFacts.Label.Search" = "Enter the search term below";
+"SearchFacts.Textfield.Placeholder" = "Ex: Axel";
+/*SearchFacts*/

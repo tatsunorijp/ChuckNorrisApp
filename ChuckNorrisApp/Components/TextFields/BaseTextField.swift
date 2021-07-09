@@ -8,6 +8,25 @@
 import UIKit
 
 class BaseTextField: UITextField {
+    private static let defaultHeight: CGFloat = 44
+    private static let halfHeight = defaultHeight / 2
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        prepareLayout()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        prepareLayout()
+    }
+
+    var padding: UIEdgeInsets {
+        UIEdgeInsets(
+            top: 0, left: BaseTextField.halfHeight, bottom: 0, right: BaseTextField.halfHeight
+        )
+    }
+
     func setLeftIcon(color: UIColor, icon: UIImage) {
         let imageView = UIImageView(frame: CGRect(
                                         x: 12, y: 0,
@@ -27,5 +46,7 @@ class BaseTextField: UITextField {
         leftViewMode = .always
         leftView = contentView
     }
+    
+    func prepareLayout() {}
 
 }
