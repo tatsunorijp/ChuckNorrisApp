@@ -14,6 +14,10 @@ internal enum L10n {
   internal enum ChuckNorrisFacts {
     /// Chuck Norris Facts
     internal static let title = L10n.tr("Localizable", "ChuckNorrisFacts.Title")
+    internal enum Button {
+      /// More
+      internal static let more = L10n.tr("Localizable", "ChuckNorrisFacts.Button.More")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

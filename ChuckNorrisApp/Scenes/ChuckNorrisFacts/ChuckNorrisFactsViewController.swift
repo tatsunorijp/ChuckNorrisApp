@@ -19,6 +19,11 @@ final class ChuckNorrisFactsViewController: BaseViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
+    private enum Consts {
+        static let topCollectionViewMargin: CGFloat = 16
+        static let bottomCollectionViewMaring: CGFloat = 32
+    }
+    
     lazy var adapter: ListAdapter = {
         let updater = ListAdapterUpdater()
         let adapter = ListAdapter(updater: updater, viewController: self)
@@ -57,6 +62,27 @@ final class ChuckNorrisFactsViewController: BaseViewController {
     
     override func prepare() {
         super.prepare()
+        prepareCollectionView()
+        prepareNavigationBar()
+        
+    }
+    
+    private func prepareCollectionView() {
+        _ = adapter
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.backgroundColor = Asset.Colors.gray100.color
+        collectionView.contentInset = UIEdgeInsets(
+            top: Consts.topCollectionViewMargin,
+            left: 0,
+            bottom: Consts.bottomCollectionViewMaring,
+            right: 0
+        )
+        collectionView.register(
+            UINib(nibName: FactsCell.nibName, bundle: FactsCell.nibBundle),
+            forCellWithReuseIdentifier: String(describing: FactsCell.self))
+    }
+    
+    private func prepareNavigationBar() {
         title = L10n.ChuckNorrisFacts.title
         let searchButton = UIBarButtonItem(image: Asset.Assets.magnifier.image,
                                            style: .plain,
@@ -65,10 +91,6 @@ final class ChuckNorrisFactsViewController: BaseViewController {
         )
         
         navigationItem.rightBarButtonItem = searchButton
-        _ = adapter
-        collectionView.register(
-            UINib(nibName: FactsCell.nibName, bundle: FactsCell.nibBundle),
-            forCellWithReuseIdentifier: String(describing: FactsCell.self))
     }
     
     @objc private func navigateToSearch() {
@@ -88,7 +110,10 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return FactsSectionController()
+        return FactsSectionController { factId in
+            print(factId)
+            Alert.show(in: self, title: "Em produção", message: "Esta funcionalidade ainda não está pronta e será entregue proximamente.")
+        }
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {

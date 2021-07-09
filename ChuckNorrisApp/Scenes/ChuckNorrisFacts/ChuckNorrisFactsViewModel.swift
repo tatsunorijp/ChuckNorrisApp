@@ -49,7 +49,6 @@ final class ChuckNorrisFactsViewModel: ChuckNorrisFactsViewModelType, ChuckNorri
                     .asDriver(trackActivityWith: activityIndicator, onErrorTrackWith: errorTracker)
             }
             .map { $0.map { factData in
-                print(factData.fact.numberOfWords)
                 return DisplayableModel(
                     id: factData.id,
                     categories: factData.categories,
