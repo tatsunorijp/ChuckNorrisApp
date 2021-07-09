@@ -27,6 +27,9 @@
 		0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DF726974B7500803723 /* TopRoundedView.swift */; };
 		0E053DFC2697511100803723 /* FactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DFA2697511100803723 /* FactsCell.swift */; };
 		0E053DFD2697511100803723 /* FactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E053DFB2697511100803723 /* FactsCell.xib */; };
+		0EAA5445269794F900ADB4EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA5444269794F900ADB4EB /* String.swift */; };
+		0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */; };
+		0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -88,6 +91,9 @@
 		0E053DF726974B7500803723 /* TopRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundedView.swift; sourceTree = "<group>"; };
 		0E053DFA2697511100803723 /* FactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCell.swift; sourceTree = "<group>"; };
 		0E053DFB2697511100803723 /* FactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCell.xib; sourceTree = "<group>"; };
+		0EAA5444269794F900ADB4EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				087021A92696558C00117B68 /* BaseButton.swift */,
+				0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */,
+				0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 				0EE44218269643280093A9FA /* NibLoadable.swift */,
 				0EE44219269643280093A9FA /* RxExtensions.swift */,
 				0EE4421A269643280093A9FA /* UIViewController+Rx.swift */,
+				0EAA5444269794F900ADB4EB /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -725,8 +734,10 @@
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
 				087021B02696558C00117B68 /* BaseButton.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
+				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,
 				0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */,
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
+				0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */,
 				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
 				0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */,
@@ -737,6 +748,7 @@
 				0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */,
 				0EE4423B26964D020093A9FA /* Localizable.strings.swift in Sources */,
 				0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */,
+				0EAA5445269794F900ADB4EB /* String.swift in Sources */,
 				0EE44216269642BA0093A9FA /* Router.swift in Sources */,
 				0E053DF12697340000803723 /* ChuckNorrisFactsBuilder.swift in Sources */,
 				0EE44215269642BA0093A9FA /* Builder.swift in Sources */,

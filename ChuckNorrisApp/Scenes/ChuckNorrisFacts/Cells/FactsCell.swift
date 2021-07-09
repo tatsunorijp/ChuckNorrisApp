@@ -9,8 +9,14 @@ import UIKit
 import IGListKit
 
 class FactsCell: UICollectionViewCell, NibLoadable {
-    static let defaultHeight: CGFloat = 100
-    @IBOutlet weak var factLabel: UILabel!
+    static let defaultHeight: CGFloat = 130
+    
+    @IBOutlet weak var factsContainerView: UIView!
+    @IBOutlet private weak var factLabel: UILabel!
+    @IBOutlet weak var moreButton: SmallPrimaryButton!
+    
+    var didSelectFact: ((String) -> Void)?
+    private var id: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,22 +24,40 @@ class FactsCell: UICollectionViewCell, NibLoadable {
     }
     
     private func prepare() {
-        factLabel.textColor = Asset.Colors.orange400.color
+        factsContainerView.layer.cornerRadius = 24
+        factsContainerView.layer.masksToBounds = true
+        moreButton.setTitle(L10n.ChuckNorrisFacts.Button.more, for: .normal)
+        let tapRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(didTapOnMore)
+        )
+        moreButton.addGestureRecognizer(tapRecognizer)
     }
     
-    func setup(with model: String) {
-        self.factLabel.text = model
+    @objc private func didTapOnMore() {
+        guard let didSelectFact = didSelectFact,
+              let id = id else { return }
+        didSelectFact(id)
     }
-
+    
+    func setup(with model: ChuckNorrisFactsViewModel.DisplayableModel) {
+        factLabel.text = model.fact
+        id = model.id
+    }
 }
 
 final class FactsSectionController: ListSectionController {
-    var identifier: String?
+    var fact: ChuckNorrisFactsViewModel.DisplayableModel!
+    var didSelectFact: (String) -> Void
+    
+    init(didSelectFact: @escaping (String) -> Void) {
+        self.didSelectFact = didSelectFact
+    }
     
     override func didUpdate(to object: Any) {
         super.didUpdate(to: object)
-        guard let identifier =  object as? DiffableBox<String> else { return }
-        self.identifier = identifier.value
+        guard let fact =  object as? DiffableBox<ChuckNorrisFactsViewModel.DisplayableModel> else { return }
+        self.fact = fact.value
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -46,7 +70,8 @@ final class FactsSectionController: ListSectionController {
             at: index
         ) as! FactsCell
         
-        cell.setup(with: identifier ?? "")
+        cell.setup(with: fact!)
+        cell.didSelectFact = didSelectFact
         return cell
     }
     

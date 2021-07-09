@@ -40,7 +40,6 @@ class BaseButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         isLoading.asDriver()
             .drive { shouldShowLoader in
                 shouldShowLoader ? self.showLoading() : self.hideLoading()
@@ -75,5 +74,12 @@ class BaseButton: UIButton {
         setTitle(buttonState.title, for: .normal)
         setImage(buttonState.icon, for: .normal)
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        prepareLayout()
+    }
+    
+    func prepareLayout() {}
     
 }
