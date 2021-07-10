@@ -36,7 +36,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggg-pp-VNd">
                                             <rect key="frame" x="32" y="32" width="350" height="25.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                            <color key="textColor" name="Orange400"/>
+                                            <color key="textColor" name="Gray500"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cop-Jr-klT" customClass="LineTextField" customModule="ChuckNorrisApp" customModuleProvider="target">
@@ -97,6 +97,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="Gray500">
+            <color red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Orange400">
             <color red="1" green="0.45098039215686275" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

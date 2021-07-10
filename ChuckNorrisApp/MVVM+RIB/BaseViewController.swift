@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import TinyConstraints
 
 class BaseViewController: UIViewController {
     private let viewModel: BaseViewModelType?
@@ -18,7 +19,7 @@ class BaseViewController: UIViewController {
     let isLoading = BehaviorRelay(value: true)
     
     private var internalScrollView: UIScrollView?
-    private lazy var loadingViewController = createLoadingViewController()
+    private lazy var loadingViewController = UIViewController()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         
@@ -80,16 +81,12 @@ class BaseViewController: UIViewController {
         ]
     }
     
-    func createLoadingViewController() -> UIViewController {
-        let loadingView = UIViewController()
-        return loadingView
-    }
-    
     func handleLoadingView(_ isLoading: Bool) {
         if isLoading {
             view.endEditing(true)
             add(loadingViewController)
-            // adicionar constrainst "edges to superview"
+            loadingViewController.view.edgesToSuperview(usingSafeArea: false)
+            
         } else {
             loadingViewController.removeFromParent()
         }

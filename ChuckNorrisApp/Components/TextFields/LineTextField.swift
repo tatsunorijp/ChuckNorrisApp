@@ -32,7 +32,7 @@ class LineTextField: BaseTextField {
     override func prepareLayout() {
         borderStyle = .none
         textAlignment = .center
-        textColor = Asset.Colors.gray300.color
+        textColor = Asset.Colors.orange300.color
         tintColor = Asset.Colors.orange400.color
         autocorrectionType = .no
         // TODO: em um projeto real deve existir um padrão de fontes (H1, H2, etc)
