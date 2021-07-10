@@ -30,6 +30,13 @@
 		0EAA5445269794F900ADB4EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA5444269794F900ADB4EB /* String.swift */; };
 		0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */; };
 		0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */; };
+		0EAA54572698C09600ADB4EB /* SearchFactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54512698C09600ADB4EB /* SearchFactsRouter.swift */; };
+		0EAA54582698C09600ADB4EB /* SearchFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54522698C09600ADB4EB /* SearchFactsViewController.swift */; };
+		0EAA54592698C09600ADB4EB /* SearchFactsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54532698C09600ADB4EB /* SearchFactsBuilder.swift */; };
+		0EAA545A2698C09600ADB4EB /* SearchFactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54542698C09600ADB4EB /* SearchFactsInteractor.swift */; };
+		0EAA545B2698C09600ADB4EB /* SearchFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */; };
+		0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */; };
+		0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54622698E1E400ADB4EB /* LineTextField.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -94,6 +101,13 @@
 		0EAA5444269794F900ADB4EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
+		0EAA54512698C09600ADB4EB /* SearchFactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsRouter.swift; sourceTree = "<group>"; };
+		0EAA54522698C09600ADB4EB /* SearchFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewController.swift; sourceTree = "<group>"; };
+		0EAA54532698C09600ADB4EB /* SearchFactsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsBuilder.swift; sourceTree = "<group>"; };
+		0EAA54542698C09600ADB4EB /* SearchFactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsInteractor.swift; sourceTree = "<group>"; };
+		0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewModel.swift; sourceTree = "<group>"; };
+		0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFactsViewController.xib; sourceTree = "<group>"; };
+		0EAA54622698E1E400ADB4EB /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +190,7 @@
 			children = (
 				087021A32696558C00117B68 /* BaseTextField.swift */,
 				087021A42696558C00117B68 /* RoundedTextField.swift */,
+				0EAA54622698E1E400ADB4EB /* LineTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -253,6 +268,19 @@
 				0E053DFB2697511100803723 /* FactsCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0EAA54502698C07700ADB4EB /* ChuckNorrisSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0EAA54512698C09600ADB4EB /* SearchFactsRouter.swift */,
+				0EAA54522698C09600ADB4EB /* SearchFactsViewController.swift */,
+				0EAA54532698C09600ADB4EB /* SearchFactsBuilder.swift */,
+				0EAA54542698C09600ADB4EB /* SearchFactsInteractor.swift */,
+				0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */,
+				0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */,
+			);
+			path = ChuckNorrisSearch;
 			sourceTree = "<group>";
 		};
 		0EE441CA26963F4B0093A9FA = {
@@ -378,6 +406,7 @@
 		0EE4420C2696420D0093A9FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0EAA54502698C07700ADB4EB /* ChuckNorrisSearch */,
 				0E053DE8269733D500803723 /* ChuckNorrisFacts */,
 			);
 			path = Scenes;
@@ -525,6 +554,7 @@
 				0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */,
 				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
 				0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */,
+				0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */,
 				0E053DFD2697511100803723 /* FactsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,14 +758,17 @@
 				0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */,
 				0EE4421B269643280093A9FA /* NibLoadable.swift in Sources */,
 				0EE44214269642BA0093A9FA /* BaseInteractor.swift in Sources */,
+				0EAA54582698C09600ADB4EB /* SearchFactsViewController.swift in Sources */,
 				0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */,
 				087021AD2696558C00117B68 /* RoundedTextField.swift in Sources */,
 				0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */,
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
 				087021B02696558C00117B68 /* BaseButton.swift in Sources */,
+				0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
 				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,
 				0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */,
+				0EAA54592698C09600ADB4EB /* SearchFactsBuilder.swift in Sources */,
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
 				0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */,
 				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
@@ -746,11 +779,14 @@
 				0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */,
 				0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */,
 				0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */,
+				0EAA545B2698C09600ADB4EB /* SearchFactsViewModel.swift in Sources */,
 				0EE4423B26964D020093A9FA /* Localizable.strings.swift in Sources */,
 				0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */,
 				0EAA5445269794F900ADB4EB /* String.swift in Sources */,
 				0EE44216269642BA0093A9FA /* Router.swift in Sources */,
+				0EAA54572698C09600ADB4EB /* SearchFactsRouter.swift in Sources */,
 				0E053DF12697340000803723 /* ChuckNorrisFactsBuilder.swift in Sources */,
+				0EAA545A2698C09600ADB4EB /* SearchFactsInteractor.swift in Sources */,
 				0EE44215269642BA0093A9FA /* Builder.swift in Sources */,
 				087021B12696558C00117B68 /* NavigationController.swift in Sources */,
 				087021AF2696558C00117B68 /* LoadingView.swift in Sources */,

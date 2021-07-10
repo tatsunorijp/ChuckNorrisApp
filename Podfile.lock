@@ -13,6 +13,7 @@ PODS:
   - Sourcery (1.4.2)
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
   - IGListKit
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - Sourcery
   - SwiftGen
   - SwiftLint
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - Sourcery
     - SwiftGen
     - SwiftLint
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
@@ -45,7 +48,8 @@ SPEC CHECKSUMS:
   Sourcery: 43d8addc35ca31c2ab331cfd34b02421fa53bb7f
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 30d9ce59baf21a87f9f9ff393bc3d462a19424d5
+PODFILE CHECKSUM: 1251f49e3f8f341f51b4a16096a48f39ff18a0b2
 
 COCOAPODS: 1.10.1

@@ -46,7 +46,6 @@ final class ChuckNorrisFactsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.input.didSearchTextChange.onNext("nada mock")
     }
     
     override func bindViewModel() {
@@ -57,6 +56,14 @@ final class ChuckNorrisFactsViewController: BaseViewController {
                 self?.chuckNorrisFacts = facts
                 self?.adapter.performUpdates(animated: true, completion: nil)
             }
+            .disposed(by: disposeBag)
+        
+        viewModel.output.isLoading
+            .drive(isLoading)
+            .disposed(by: disposeBag)
+        
+        viewModel.output.error
+            .drive(error)
             .disposed(by: disposeBag)
     }
     
@@ -94,7 +101,7 @@ final class ChuckNorrisFactsViewController: BaseViewController {
     }
     
     @objc private func navigateToSearch() {
-        Alert.show(in: self, title: "Em produção", message: "Esta funcionalidade ainda não está pronta e será entregue proximamente.")
+        router.navigateToSearch(delegate: self)
     }
 }
 
@@ -119,6 +126,10 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
-    
-    
+}
+
+extension ChuckNorrisFactsViewController: SearchFactsDelegate {
+    func searchFacts(term: String) {
+        viewModel.input.didSearchTextChange.onNext(term)
+    }
 }

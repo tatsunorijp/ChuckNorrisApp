@@ -8,10 +8,20 @@ target 'ChuckNorrisApp' do
   # Pods for ChuckNorrisApp
 	pod 'RxSwift'
 	pod 'RxCocoa'
+	
+	# Geração de assets
 	pod 'SwiftGen'
+	
+	# Geracao de código automatizado
 	pod 'Sourcery'
+
 	pod 'SwiftLint'
+	
+	# Collection view utilizado pelo instagram
 	pod 'IGListKit'
+
+	# Ferramenta de constraints
+	pod "TinyConstraints"
 
   target 'ChuckNorrisAppTests' do
     inherit! :search_paths
