@@ -1,7 +1,13 @@
 PODS:
+  - Alamofire (5.4.3)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -16,7 +22,9 @@ PODS:
   - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - IGListKit
+  - RxAlamofire
   - RxCocoa
   - RxSwift
   - RxTest
@@ -27,8 +35,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - IGListDiffKit
     - IGListKit
+    - RxAlamofire
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -39,8 +49,10 @@ SPEC REPOS:
     - TinyConstraints
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
@@ -50,6 +62,6 @@ SPEC CHECKSUMS:
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 1251f49e3f8f341f51b4a16096a48f39ff18a0b2
+PODFILE CHECKSUM: 26b917704270c0f2ece0afa38ef6795ef26664bb
 
 COCOAPODS: 1.10.1

@@ -37,6 +37,12 @@
 		0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */; };
 		0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54622698E1E400ADB4EB /* LineTextField.swift */; };
 		0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */; };
+		0EC9081F269A1BCB009FE03A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9081E269A1BCB009FE03A /* Environment.swift */; };
+		0EC90821269A1C15009FE03A /* ChuckNorrisAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */; };
+		0EC90823269A1CF9009FE03A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90822269A1CF9009FE03A /* ApiRouter.swift */; };
+		0EC90826269A1EAF009FE03A /* Facts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90825269A1EAF009FE03A /* Facts.swift */; };
+		0EC90828269A1F46009FE03A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90827269A1F46009FE03A /* ApiError.swift */; };
+		0EC9082A269A2115009FE03A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90829269A2115009FE03A /* ApiClient.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -108,6 +114,12 @@
 		0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFactsViewController.xib; sourceTree = "<group>"; };
 		0EAA54622698E1E400ADB4EB /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsEmptyView.swift; sourceTree = "<group>"; };
+		0EC9081E269A1BCB009FE03A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisAPI.swift; sourceTree = "<group>"; };
+		0EC90822269A1CF9009FE03A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		0EC90825269A1EAF009FE03A /* Facts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facts.swift; sourceTree = "<group>"; };
+		0EC90827269A1F46009FE03A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		0EC90829269A2115009FE03A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +303,27 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
+		0EC9081D269A1191009FE03A /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				0EC90824269A1E92009FE03A /* ResponsesModel */,
+				0EC9081E269A1BCB009FE03A /* Environment.swift */,
+				0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */,
+				0EC90822269A1CF9009FE03A /* ApiRouter.swift */,
+				0EC90827269A1F46009FE03A /* ApiError.swift */,
+				0EC90829269A2115009FE03A /* ApiClient.swift */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		0EC90824269A1E92009FE03A /* ResponsesModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EC90825269A1EAF009FE03A /* Facts.swift */,
+			);
+			path = ResponsesModel;
+			sourceTree = "<group>";
+		};
 		0EE441CA26963F4B0093A9FA = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE44206269641C70093A9FA /* Application */,
+				0EC9081D269A1191009FE03A /* NetWorking */,
 				0EE44207269641D80093A9FA /* MVVM+RIB */,
 				0EE44209269641F50093A9FA /* Generated */,
 				0EE4420A269641FB0093A9FA /* Extensions */,
@@ -768,22 +802,27 @@
 				0EAA54582698C09600ADB4EB /* SearchFactsViewController.swift in Sources */,
 				0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */,
 				087021AD2696558C00117B68 /* RoundedTextField.swift in Sources */,
+				0EC90826269A1EAF009FE03A /* Facts.swift in Sources */,
 				0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */,
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
 				087021B02696558C00117B68 /* BaseButton.swift in Sources */,
+				0EC9082A269A2115009FE03A /* ApiClient.swift in Sources */,
 				0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */,
 				0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
 				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,
+				0EC90823269A1CF9009FE03A /* ApiRouter.swift in Sources */,
 				0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */,
 				0EAA54592698C09600ADB4EB /* SearchFactsBuilder.swift in Sources */,
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
 				0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */,
 				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
+				0EC90821269A1C15009FE03A /* ChuckNorrisAPI.swift in Sources */,
 				0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */,
 				0EE4423C26964D020093A9FA /* XCAssets+Generated.swift in Sources */,
 				087021B52696924900117B68 /* DiffableBox.swift in Sources */,
+				0EC90828269A1F46009FE03A /* ApiError.swift in Sources */,
 				0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */,
 				0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */,
 				0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */,
@@ -795,6 +834,7 @@
 				0EAA54572698C09600ADB4EB /* SearchFactsRouter.swift in Sources */,
 				0E053DF12697340000803723 /* ChuckNorrisFactsBuilder.swift in Sources */,
 				0EAA545A2698C09600ADB4EB /* SearchFactsInteractor.swift in Sources */,
+				0EC9081F269A1BCB009FE03A /* Environment.swift in Sources */,
 				0EE44215269642BA0093A9FA /* Builder.swift in Sources */,
 				087021B12696558C00117B68 /* NavigationController.swift in Sources */,
 				087021AF2696558C00117B68 /* LoadingView.swift in Sources */,

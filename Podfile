@@ -23,6 +23,10 @@ target 'ChuckNorrisApp' do
 	# Ferramenta de constraints
 	pod "TinyConstraints"
 
+	# API
+	pod 'Alamofire'
+	pod 'RxAlamofire'
+
   target 'ChuckNorrisAppTests' do
     inherit! :search_paths
     # Pods for testing
