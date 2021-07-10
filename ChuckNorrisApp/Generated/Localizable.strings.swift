@@ -18,6 +18,10 @@ internal enum L10n {
       /// More
       internal static let more = L10n.tr("Localizable", "ChuckNorrisFacts.Button.More")
     }
+    internal enum EmptyView {
+      /// No facts found, click on the magnifying glass above to search for something
+      internal static let label = L10n.tr("Localizable", "ChuckNorrisFacts.EmptyView.Label")
+    }
   }
 
   internal enum SearchFacts {

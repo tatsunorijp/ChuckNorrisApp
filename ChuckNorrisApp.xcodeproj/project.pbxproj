@@ -10,7 +10,6 @@
 		0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0870219E2696542E00117B68 /* AutoMockable.generated.swift */; };
 		087021AC2696558C00117B68 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A32696558C00117B68 /* BaseTextField.swift */; };
 		087021AD2696558C00117B68 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A42696558C00117B68 /* RoundedTextField.swift */; };
-		087021AE2696558C00117B68 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087021A62696558C00117B68 /* LoadingView.xib */; };
 		087021AF2696558C00117B68 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A72696558C00117B68 /* LoadingView.swift */; };
 		087021B02696558C00117B68 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A92696558C00117B68 /* BaseButton.swift */; };
 		087021B12696558C00117B68 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021AB2696558C00117B68 /* NavigationController.swift */; };
@@ -37,6 +36,7 @@
 		0EAA545B2698C09600ADB4EB /* SearchFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */; };
 		0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */; };
 		0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54622698E1E400ADB4EB /* LineTextField.swift */; };
+		0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */; };
 		0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D626963F4B0093A9FA /* AppDelegate.swift */; };
 		0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE441D826963F4B0093A9FA /* SceneDelegate.swift */; };
 		0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441DF26963F4E0093A9FA /* Assets.xcassets */; };
@@ -82,7 +82,6 @@
 		0870219E2696542E00117B68 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		087021A32696558C00117B68 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		087021A42696558C00117B68 /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
-		087021A62696558C00117B68 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		087021A72696558C00117B68 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		087021A92696558C00117B68 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		087021AB2696558C00117B68 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewModel.swift; sourceTree = "<group>"; };
 		0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFactsViewController.xib; sourceTree = "<group>"; };
 		0EAA54622698E1E400ADB4EB /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsEmptyView.swift; sourceTree = "<group>"; };
 		0EE441D326963F4B0093A9FA /* ChuckNorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE441D626963F4B0093A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE441D826963F4B0093A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,7 +198,6 @@
 		087021A52696558C00117B68 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				087021A62696558C00117B68 /* LoadingView.xib */,
 				087021A72696558C00117B68 /* LoadingView.swift */,
 			);
 			path = LoadingView;
@@ -242,6 +241,7 @@
 		0E053DE8269733D500803723 /* ChuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
+				0EC9081A2699D936009FE03A /* EmptyView */,
 				0E053DF9269750E900803723 /* Cells */,
 				0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */,
 				0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */,
@@ -281,6 +281,14 @@
 				0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */,
 			);
 			path = ChuckNorrisSearch;
+			sourceTree = "<group>";
+		};
+		0EC9081A2699D936009FE03A /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */,
+			);
+			path = EmptyView;
 			sourceTree = "<group>";
 		};
 		0EE441CA26963F4B0093A9FA = {
@@ -549,7 +557,6 @@
 			files = (
 				0EE44234269647620093A9FA /* Colors.xcassets in Resources */,
 				0EE44230269646DA0093A9FA /* Localizable.strings in Resources */,
-				087021AE2696558C00117B68 /* LoadingView.xib in Resources */,
 				0E053DE72697336500803723 /* LaunchScreen.storyboard in Resources */,
 				0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */,
 				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
@@ -764,6 +771,7 @@
 				0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */,
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
 				087021B02696558C00117B68 /* BaseButton.swift in Sources */,
+				0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */,
 				0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
 				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,

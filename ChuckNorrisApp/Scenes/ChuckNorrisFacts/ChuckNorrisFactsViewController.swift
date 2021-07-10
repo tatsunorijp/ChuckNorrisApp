@@ -124,7 +124,7 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
-        return nil
+        return ChuckNorrisFactsEmptyView()
     }
 }
 

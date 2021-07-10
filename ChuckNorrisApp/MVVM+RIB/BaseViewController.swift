@@ -19,8 +19,8 @@ class BaseViewController: UIViewController {
     let isLoading = BehaviorRelay(value: true)
     
     private var internalScrollView: UIScrollView?
-    private lazy var loadingViewController = UIViewController()
-
+    private lazy var loadingViewController = LoadingView()
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         
         let interactor = BaseInteractor()
@@ -87,8 +87,18 @@ class BaseViewController: UIViewController {
             add(loadingViewController)
             loadingViewController.view.edgesToSuperview(usingSafeArea: false)
             
+            guard let navigationController = navigationController else { return }
+            navigationController.setNavigationBarHidden(true, animated: true)
+            
         } else {
-            loadingViewController.removeFromParent()
+            if loadingViewController.parent != nil {
+                loadingViewController.willMove(toParent: nil)
+                loadingViewController.view.removeFromSuperview()
+                loadingViewController.removeFromParent()
+                
+                guard let navigationController = navigationController else { return }
+                navigationController.setNavigationBarHidden(false, animated: true)
+            }
         }
     }
     
@@ -96,9 +106,9 @@ class BaseViewController: UIViewController {
         dump(error)
         
         // handle error
-        Alert.show(in: self, title: "titulo do erro", message: "menssagem de erro")
+        Alert.show(in: self, title: "Ops...", message: error.localizedDescription)
     }
-
+    
     func keyboardWillAppear(with size: CGSize, duration: TimeInterval) {
         let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: size.height + 16, right: 0)
         internalScrollView?.contentInset = contentInsets
@@ -111,7 +121,7 @@ class BaseViewController: UIViewController {
             internalScrollView?.scrollRectToVisible(activeTextField.frame, animated: true)
         }
     }
-
+    
     func keyboardWillDisappear(with size: CGSize, duration: TimeInterval) {
         let contentInsets = UIEdgeInsets.zero
         internalScrollView?.contentInset = contentInsets
@@ -139,24 +149,24 @@ extension BaseViewController {
     @objc private func keyboardWillShow(_ notification: NSNotification) {
         guard let info = notification.userInfo,
               let keyboardSize = (info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?
-              .cgRectValue.size,
+                .cgRectValue.size,
               let animationDuration = (
-                  info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
+                info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
               )?.doubleValue
         else { return }
-
+        
         keyboardWillAppear(with: keyboardSize, duration: animationDuration)
     }
-
+    
     @objc private func keyboardWillHide(_ notification: NSNotification) {
         guard let info = notification.userInfo,
               let keyboardSize = (info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?
-              .cgRectValue.size,
+                .cgRectValue.size,
               let animationDuration = (
-                  info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
+                info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber
               )?.doubleValue
         else { return }
-
+        
         keyboardWillDisappear(with: keyboardSize, duration: animationDuration)
     }
     
@@ -186,7 +196,7 @@ extension BaseViewController {
             if let textField = view as? UITextField, textField.isFirstResponder {
                 return textField
             }
-
+            
             return findActiveTextField(view.subviews)
         }
         return nil
@@ -197,7 +207,7 @@ extension BaseViewController {
         view.addSubview(child.view)
         child.didMove(toParent: self)
     }
-
+    
     func remove() {
         guard parent != nil else {
             return

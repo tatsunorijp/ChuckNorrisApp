@@ -65,7 +65,7 @@ final class SearchFactsViewController: BaseViewController {
             .bind { _ in
                 guard let delegate = self.delegate else { return }
                 delegate.searchFacts(term: self.textField.text ?? "")
-                self.navigationController?.popViewController(animated: true)
+                self.router.popViewController()
             }
             .disposed(by: disposeBag)
     }
