@@ -9,21 +9,11 @@
 import UIKit
 
 protocol SearchFactsRouting: AnyObject {
-    // Declare methods to navigate to other scenes
-    // func navigateToOtherScene()
+    func popViewController()
 }
 
 final class SearchFactsRouter: Router, SearchFactsRouting {
-    /* All the builders needed when navigating must be passed as parameters in the constructor.
-     init(otherSceneBuilder: OtherSceneBuildable) {
-     self.otherSceneBuilder = otherSceneBuilder
-     }
-
-     func navigateToOtherScene() {
-     let otherScene = otherSceneBuilder.build()
-     viewController.navigationController.pushViewController(otherScene, animated: true)
-     }
-
-     private let otherSceneBuilder: OtherSceneBuildable
-     */
+    func popViewController() {
+        viewController.navigationController?.popViewController(animated: true)
+    }
 }

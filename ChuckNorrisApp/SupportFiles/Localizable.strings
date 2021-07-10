@@ -8,6 +8,7 @@
 /*ChuckNorrisFacts*/
 "ChuckNorrisFacts.Title" = "Chuck Norris Facts";
 "ChuckNorrisFacts.Button.More" = "More";
+"ChuckNorrisFacts.EmptyView.Label" = "No facts found, click on the magnifying glass above to search for something";
 /*ChuckNorrisFacts*/
 
 /*SearchFacts*/
