@@ -25,7 +25,6 @@ target 'ChuckNorrisApp' do
 
 	# API
 	pod 'Alamofire'
-	pod 'RxAlamofire'
 
   target 'ChuckNorrisAppTests' do
     inherit! :search_paths

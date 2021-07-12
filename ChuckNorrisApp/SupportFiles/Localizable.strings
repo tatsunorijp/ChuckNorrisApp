@@ -5,6 +5,17 @@
   Created by Tatsu on 07/07/21.
   
 */
+/*ChuckNorrisErrors*/
+"Error.Title" = "Ohh nooo...";
+"Error.NoInternetAccess" = "Please, check your internet connection";
+"Error.Forbidden" = "Access Denied, Check your connection is secure";
+"Error.NotFound" = "Route not found";
+"Error.BadRequest" = "Request not understood, please contact our providers";
+"Error.InternalServerError" = "Internal error, please, contact our providers";
+"Error.Unexpected" = "
+Error %@, please contact our providers.";
+/*ChuckNorrisErrors*/
+
 /*ChuckNorrisFacts*/
 "ChuckNorrisFacts.Title" = "Chuck Norris Facts";
 "ChuckNorrisFacts.Button.More" = "More";

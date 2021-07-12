@@ -8,8 +8,10 @@
 import Foundation
 
 enum ApiError: Error {
+    case noInternetAccess
     case forbidden
     case notFound
-    case conflict
+    case badRequest
     case internalServerError
+    case unexpected
 }
