@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Facts: Codable {
+struct Facts: Codable {
     let total: Int
     let all: [Fact]
     
@@ -23,7 +23,8 @@ class Facts: Codable {
 }
 
 // MARK: - All
-class Fact: Codable {
+struct Fact: Codable, Equatable {
+    
     let categories: [String]
     let createdAt: String
     let iconURL: String
