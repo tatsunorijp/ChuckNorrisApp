@@ -8,7 +8,6 @@
 import Foundation
 import RxSwift
 import Alamofire
-import RxAlamofire
 
 class ApiClient {
     
