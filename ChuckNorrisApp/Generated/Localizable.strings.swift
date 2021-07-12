@@ -11,6 +11,21 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum ChuckNorrisFactDetails {
+    internal enum Button {
+      /// Share
+      internal static let share = L10n.tr("Localizable", "ChuckNorrisFactDetails.Button.Share")
+    }
+    internal enum Label {
+      /// Category
+      internal static let category = L10n.tr("Localizable", "ChuckNorrisFactDetails.Label.Category")
+      /// Fact discovered in %@
+      internal static func discoveredIn(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "ChuckNorrisFactDetails.Label.DiscoveredIn", String(describing: p1))
+      }
+    }
+  }
+
   internal enum ChuckNorrisFacts {
     /// Chuck Norris Facts
     internal static let title = L10n.tr("Localizable", "ChuckNorrisFacts.Title")

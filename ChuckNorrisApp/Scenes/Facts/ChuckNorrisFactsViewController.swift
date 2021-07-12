@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 import UIKit
 import IGListKit
-import Alamofire
+import FloatingPanel
 
 final class ChuckNorrisFactsViewController: BaseViewController {
     
@@ -33,7 +33,8 @@ final class ChuckNorrisFactsViewController: BaseViewController {
         return adapter
     }()
     
-    var chuckNorrisFacts: [ChuckNorrisFactsViewModel.DisplayableModel] = []
+    private var floatingPanel: FloatingPanelController!
+    private var chuckNorrisFacts: [ChuckNorrisFactsViewModel.DisplayableModel] = []
     
     init(withViewModel viewModel: ChuckNorrisFactsViewModelType, router: ChuckNorrisFactsRouting) {
         self.viewModel = viewModel
@@ -59,6 +60,12 @@ final class ChuckNorrisFactsViewController: BaseViewController {
             }
             .disposed(by: disposeBag)
         
+        viewModel.output.selectedFact
+            .drive { [weak self] fact in
+                self?.presentFactDetailsWith(fact)
+            }
+            .disposed(by: disposeBag)
+        
         viewModel.output.isLoading
             .drive(isLoading)
             .disposed(by: disposeBag)
@@ -72,7 +79,7 @@ final class ChuckNorrisFactsViewController: BaseViewController {
         super.prepare()
         prepareCollectionView()
         prepareNavigationBar()
-        
+        prepareFloatingPanel()
     }
     
     private func prepareCollectionView() {
@@ -90,6 +97,12 @@ final class ChuckNorrisFactsViewController: BaseViewController {
             forCellWithReuseIdentifier: String(describing: FactsCell.self))
     }
     
+    private func prepareFloatingPanel() {
+        floatingPanel = BaseFloatingPanelController()
+        floatingPanel.isRemovalInteractionEnabled = true
+        floatingPanel.layout = BaseFloatingPanelLayout()
+    }
+    
     private func prepareNavigationBar() {
         title = L10n.ChuckNorrisFacts.title
         let searchButton = UIBarButtonItem(image: Asset.Assets.magnifier.image,
@@ -99,6 +112,19 @@ final class ChuckNorrisFactsViewController: BaseViewController {
         )
         
         navigationItem.rightBarButtonItem = searchButton
+    }
+    
+    private func presentFactDetailsWith(_ fact: Fact) {
+        let chuckNorrisViewController = self.router.createChuckNorrisFactDetailsWith(fact)
+        floatingPanel.set(
+            contentViewController: chuckNorrisViewController
+        )
+        floatingPanel.track(scrollView: chuckNorrisViewController.getScrollView())
+        present(
+            self.floatingPanel,
+            animated: true,
+            completion: nil
+        )
     }
     
     @objc private func navigateToSearch() {
@@ -119,8 +145,7 @@ extension ChuckNorrisFactsViewController: ListAdapterDataSource {
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         return FactsSectionController { factId in
-            print(factId)
-            Alert.show(in: self, title: "Em produção", message: "Esta funcionalidade ainda não está pronta e será entregue proximamente.")
+            self.viewModel.input.didSelectFactId.onNext(factId)
         }
     }
     
@@ -134,3 +159,5 @@ extension ChuckNorrisFactsViewController: SearchFactsDelegate {
         viewModel.input.didSearchTextChange.onNext(term)
     }
 }
+
+extension ChuckNorrisFactsViewController: FloatingPanelControllerDelegate {}

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChuckNorrisFactsEmptyView: UIView {
+final class ChuckNorrisFactsEmptyView: UIView {
     private let label = UILabel()
     
     override init(frame: CGRect) {

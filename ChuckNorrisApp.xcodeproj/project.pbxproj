@@ -26,6 +26,15 @@
 		0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DF726974B7500803723 /* TopRoundedView.swift */; };
 		0E053DFC2697511100803723 /* FactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DFA2697511100803723 /* FactsCell.swift */; };
 		0E053DFD2697511100803723 /* FactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E053DFB2697511100803723 /* FactsCell.xib */; };
+		0E0ABA1E269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA18269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift */; };
+		0E0ABA1F269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA19269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.swift */; };
+		0E0ABA20269C8FB000BFA41E /* ChuckNorrisFactDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA1A269C8FB000BFA41E /* ChuckNorrisFactDetailsBuilder.swift */; };
+		0E0ABA21269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA1B269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift */; };
+		0E0ABA22269C8FB000BFA41E /* ChuckNorrisFactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA1C269C8FB000BFA41E /* ChuckNorrisFactDetailsViewModel.swift */; };
+		0E0ABA23269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0ABA1D269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib */; };
+		0E0ABA26269C923C00BFA41E /* BaseFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA25269C923C00BFA41E /* BaseFloatingPanelController.swift */; };
+		0E0ABA28269C961300BFA41E /* FloatingPanelGrabberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */; };
+		0E0ABA2A269CCF1400BFA41E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA29269CCF1400BFA41E /* UIView.swift */; };
 		0EAA5445269794F900ADB4EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA5444269794F900ADB4EB /* String.swift */; };
 		0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */; };
 		0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */; };
@@ -102,6 +111,15 @@
 		0E053DF726974B7500803723 /* TopRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoundedView.swift; sourceTree = "<group>"; };
 		0E053DFA2697511100803723 /* FactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCell.swift; sourceTree = "<group>"; };
 		0E053DFB2697511100803723 /* FactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCell.xib; sourceTree = "<group>"; };
+		0E0ABA18269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsRouter.swift; sourceTree = "<group>"; };
+		0E0ABA19269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsViewController.swift; sourceTree = "<group>"; };
+		0E0ABA1A269C8FB000BFA41E /* ChuckNorrisFactDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsBuilder.swift; sourceTree = "<group>"; };
+		0E0ABA1B269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsInteractor.swift; sourceTree = "<group>"; };
+		0E0ABA1C269C8FB000BFA41E /* ChuckNorrisFactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsViewModel.swift; sourceTree = "<group>"; };
+		0E0ABA1D269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChuckNorrisFactDetailsViewController.xib; sourceTree = "<group>"; };
+		0E0ABA25269C923C00BFA41E /* BaseFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFloatingPanelController.swift; sourceTree = "<group>"; };
+		0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelGrabberView.swift; sourceTree = "<group>"; };
+		0E0ABA29269CCF1400BFA41E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		0EAA5444269794F900ADB4EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
@@ -186,6 +204,7 @@
 		087021A12696554C00117B68 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0E0ABA24269C921600BFA41E /* FloatingPanel */,
 				0E053DF626974B5C00803723 /* View */,
 				087021A82696558C00117B68 /* Button */,
 				087021A52696558C00117B68 /* LoadingView */,
@@ -248,7 +267,7 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
-		0E053DE8269733D500803723 /* ChuckNorrisFacts */ = {
+		0E053DE8269733D500803723 /* Facts */ = {
 			isa = PBXGroup;
 			children = (
 				0EC9081A2699D936009FE03A /* EmptyView */,
@@ -260,7 +279,7 @@
 				0E053DED2697340000803723 /* ChuckNorrisFactsViewModel.swift */,
 				0E053DEE2697340000803723 /* ChuckNorrisFactsViewController.xib */,
 			);
-			path = ChuckNorrisFacts;
+			path = Facts;
 			sourceTree = "<group>";
 		};
 		0E053DF626974B5C00803723 /* View */ = {
@@ -280,7 +299,29 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		0EAA54502698C07700ADB4EB /* ChuckNorrisSearch */ = {
+		0E0ABA0B269C8F5E00BFA41E /* FactsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0E0ABA18269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift */,
+				0E0ABA19269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.swift */,
+				0E0ABA1A269C8FB000BFA41E /* ChuckNorrisFactDetailsBuilder.swift */,
+				0E0ABA1B269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift */,
+				0E0ABA1C269C8FB000BFA41E /* ChuckNorrisFactDetailsViewModel.swift */,
+				0E0ABA1D269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib */,
+			);
+			path = FactsDetails;
+			sourceTree = "<group>";
+		};
+		0E0ABA24269C921600BFA41E /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				0E0ABA25269C923C00BFA41E /* BaseFloatingPanelController.swift */,
+				0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */,
+			);
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		0EAA54502698C07700ADB4EB /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				0EAA54512698C09600ADB4EB /* SearchFactsRouter.swift */,
@@ -290,7 +331,7 @@
 				0EAA54552698C09600ADB4EB /* SearchFactsViewModel.swift */,
 				0EAA54562698C09600ADB4EB /* SearchFactsViewController.xib */,
 			);
-			path = ChuckNorrisSearch;
+			path = Search;
 			sourceTree = "<group>";
 		};
 		0EC9081A2699D936009FE03A /* EmptyView */ = {
@@ -428,6 +469,7 @@
 				0EE44219269643280093A9FA /* RxExtensions.swift */,
 				0EE4421A269643280093A9FA /* UIViewController+Rx.swift */,
 				0EAA5444269794F900ADB4EB /* String.swift */,
+				0E0ABA29269CCF1400BFA41E /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,8 +487,9 @@
 		0EE4420C2696420D0093A9FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0EAA54502698C07700ADB4EB /* ChuckNorrisSearch */,
-				0E053DE8269733D500803723 /* ChuckNorrisFacts */,
+				0E0ABA0B269C8F5E00BFA41E /* FactsDetails */,
+				0EAA54502698C07700ADB4EB /* Search */,
+				0E053DE8269733D500803723 /* Facts */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -591,6 +634,7 @@
 				0E053DE72697336500803723 /* LaunchScreen.storyboard in Resources */,
 				0EE441E026963F4E0093A9FA /* Assets.xcassets in Resources */,
 				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
+				0E0ABA23269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib in Resources */,
 				0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */,
 				0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */,
 				0E053DFD2697511100803723 /* FactsCell.xib in Resources */,
@@ -797,14 +841,18 @@
 				0EE4421B269643280093A9FA /* NibLoadable.swift in Sources */,
 				0EE44214269642BA0093A9FA /* BaseInteractor.swift in Sources */,
 				0EAA54582698C09600ADB4EB /* SearchFactsViewController.swift in Sources */,
+				0E0ABA1E269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift in Sources */,
 				0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */,
 				087021AD2696558C00117B68 /* RoundedTextField.swift in Sources */,
 				0EC90826269A1EAF009FE03A /* Facts.swift in Sources */,
 				0EE44220269643570093A9FA /* ActivityIndicator.swift in Sources */,
 				0EE4421C269643280093A9FA /* RxExtensions.swift in Sources */,
 				087021B02696558C00117B68 /* BaseButton.swift in Sources */,
+				0E0ABA21269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift in Sources */,
+				0E0ABA2A269CCF1400BFA41E /* UIView.swift in Sources */,
 				0EC9082A269A2115009FE03A /* ApiClient.swift in Sources */,
 				0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */,
+				0E0ABA26269C923C00BFA41E /* BaseFloatingPanelController.swift in Sources */,
 				0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
 				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,
@@ -813,18 +861,22 @@
 				0EAA54592698C09600ADB4EB /* SearchFactsBuilder.swift in Sources */,
 				0EE44217269642BA0093A9FA /* BaseViewModel.swift in Sources */,
 				0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */,
+				0E0ABA20269C8FB000BFA41E /* ChuckNorrisFactDetailsBuilder.swift in Sources */,
 				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
 				0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */,
+				0E0ABA22269C8FB000BFA41E /* ChuckNorrisFactDetailsViewModel.swift in Sources */,
 				0EE4423C26964D020093A9FA /* XCAssets+Generated.swift in Sources */,
 				087021B52696924900117B68 /* DiffableBox.swift in Sources */,
 				0EC90828269A1F46009FE03A /* ApiError.swift in Sources */,
 				0E053DF826974B7500803723 /* TopRoundedView.swift in Sources */,
 				0EE44213269642BA0093A9FA /* BaseViewController.swift in Sources */,
+				0E0ABA1F269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.swift in Sources */,
 				0E053DF32697340000803723 /* ChuckNorrisFactsViewModel.swift in Sources */,
 				0EAA545B2698C09600ADB4EB /* SearchFactsViewModel.swift in Sources */,
 				0EE4423B26964D020093A9FA /* Localizable.strings.swift in Sources */,
 				0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */,
+				0E0ABA28269C961300BFA41E /* FloatingPanelGrabberView.swift in Sources */,
 				0EAA5445269794F900ADB4EB /* String.swift in Sources */,
 				0EE44216269642BA0093A9FA /* Router.swift in Sources */,
 				0EAA54572698C09600ADB4EB /* SearchFactsRouter.swift in Sources */,

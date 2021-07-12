@@ -28,3 +28,9 @@ Error %@, please contact our providers.";
 "SearchFacts.Label.Search" = "Enter the search term below";
 "SearchFacts.Textfield.Placeholder" = "Ex: Axel";
 /*SearchFacts*/
+
+/*ChuckNorrisFactDetails*/
+"ChuckNorrisFactDetails.Button.Share" = "Share";
+"ChuckNorrisFactDetails.Label.Category" = "Category";
+"ChuckNorrisFactDetails.Label.DiscoveredIn" = "Fact discovered in %@";
+/*ChuckNorrisFactDetails*/
