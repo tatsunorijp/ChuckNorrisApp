@@ -11,6 +11,8 @@ import RxCocoa
 import RxSwift
 import UIKit
 import IGListKit
+import RxAlamofire
+import Alamofire
 
 final class ChuckNorrisFactsViewController: BaseViewController {
     

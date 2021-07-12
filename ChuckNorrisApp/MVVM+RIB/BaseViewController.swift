@@ -105,8 +105,23 @@ class BaseViewController: UIViewController {
     func handleError(_ error: Error, onConfirm: (() -> Void)? = nil) {
         dump(error)
         
-        // handle error
-        Alert.show(in: self, title: "Ops...", message: error.localizedDescription)
+        var errorMessage = ""
+        switch error {
+        case ApiError.forbidden:
+            errorMessage = L10n.Error.forbidden
+        case ApiError.notFound:
+            errorMessage = L10n.Error.notFound
+        case ApiError.badRequest:
+            errorMessage = L10n.Error.badRequest
+        case ApiError.internalServerError:
+            errorMessage = L10n.Error.internalServerError
+        case ApiError.noInternetAccess:
+            errorMessage = L10n.Error.noInternetAccess
+        default:
+            errorMessage = L10n.Error.unexpected(error.localizedDescription)
+        }
+        
+        Alert.show(in: self, title: L10n.Error.title, message: errorMessage)
     }
     
     func keyboardWillAppear(with size: CGSize, duration: TimeInterval) {

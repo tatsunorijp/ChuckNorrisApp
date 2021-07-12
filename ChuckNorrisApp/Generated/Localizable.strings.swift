@@ -24,6 +24,25 @@ internal enum L10n {
     }
   }
 
+  internal enum Error {
+    /// Request not understood, please contact our providers
+    internal static let badRequest = L10n.tr("Localizable", "Error.BadRequest")
+    /// Access Denied, Check your connection is secure
+    internal static let forbidden = L10n.tr("Localizable", "Error.Forbidden")
+    /// Internal error, please, contact our providers
+    internal static let internalServerError = L10n.tr("Localizable", "Error.InternalServerError")
+    /// Please, check your internet connection
+    internal static let noInternetAccess = L10n.tr("Localizable", "Error.NoInternetAccess")
+    /// Route not found
+    internal static let notFound = L10n.tr("Localizable", "Error.NotFound")
+    /// Ohh nooo...
+    internal static let title = L10n.tr("Localizable", "Error.Title")
+    /// \nError %@, please contact our providers.
+    internal static func unexpected(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "Error.Unexpected", String(describing: p1))
+    }
+  }
+
   internal enum SearchFacts {
     /// Search
     internal static let title = L10n.tr("Localizable", "SearchFacts.Title")

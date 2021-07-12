@@ -43,20 +43,35 @@ final class ChuckNorrisFactsViewModel: ChuckNorrisFactsViewModelType, ChuckNorri
         let errorTracker = ErrorTracker()
         error = errorTracker.asDriver()
         
+//        encounteredFacts = didSearchTextChange.asDriverOnErrorJustComplete()
+//            .flatMap { searchTerm in
+//                interactor.fetchFacts()
+//                    .asDriver(trackActivityWith: activityIndicator, onErrorTrackWith: errorTracker)
+//            }
+//            .map { $0.map { factData in
+//                return DisplayableModel(
+//                    id: factData.id,
+//                    categories: factData.categories,
+//                    iconURL: factData.iconURL,
+//                    fact: factData.fact,
+//                    textSize: factData.fact.numberOfWords > Consts.quantityWordsBreakPoint
+//                        ? .small
+//                        : .large
+//                )
+//            }}
+        
         encounteredFacts = didSearchTextChange.asDriverOnErrorJustComplete()
             .flatMap { searchTerm in
-                interactor.fetchFacts()
+                interactor.fetchFacts(searchTerm: searchTerm)
                     .asDriver(trackActivityWith: activityIndicator, onErrorTrackWith: errorTracker)
             }
             .map { $0.map { factData in
                 return DisplayableModel(
                     id: factData.id,
                     categories: factData.categories,
-                    iconURL: factData.iconURL,
-                    fact: factData.fact,
-                    textSize: factData.fact.numberOfWords > Consts.quantityWordsBreakPoint
-                        ? .small
-                        : .large
+                    iconURL: "",
+                    fact: factData.value,
+                    textSize: factData.value.numberOfWords > Consts.quantityWordsBreakPoint ? .small : .large
                 )
             }}
     }
