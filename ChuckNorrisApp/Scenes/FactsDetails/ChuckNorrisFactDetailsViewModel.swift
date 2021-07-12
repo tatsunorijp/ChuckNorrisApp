@@ -35,7 +35,14 @@ final class ChuckNorrisFactDetailsViewModel: ChuckNorrisFactDetailsViewModelType
     init(interactor: ChuckNorrisFactDetailsInteractable, fact: Fact) {
         selectedFact = onViewDidLoad.asDriverOnErrorJustComplete()
             .map { _ in
-                FactDisplayable(
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "y-MM-dd H:m:ss.SSSSSS"
+                
+                if let date = dateFormatter.date(from: fact.createdAt) {
+                    print(date)
+                }
+                
+                return FactDisplayable(
                     categorie: fact.categories.first ?? "Uncategorizied",
                     discoveredIn: fact.createdAt,
                     value: fact.value,
