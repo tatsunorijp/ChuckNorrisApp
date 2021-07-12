@@ -8,7 +8,7 @@
 import UIKit
 import TinyConstraints
 
-class LoadingView: UIViewController {
+final class LoadingView: UIViewController {
     private let activityIndicator = UIActivityIndicatorView()
     private let blurView: UIVisualEffectView = {
         let blurEffect = UIBlurEffect(style: .dark)

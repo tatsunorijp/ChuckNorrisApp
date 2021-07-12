@@ -29,7 +29,7 @@ final class SearchFactsViewController: BaseViewController {
     private var delegate: SearchFactsDelegate?
     
     private enum Consts {
-        static let bottomButtonConstraintValue = CGFloat(32)
+        static let bottomButtonConstraintValue = CGFloat(16)
     }
     
     init(withViewModel viewModel: SearchFactsViewModelType, router: SearchFactsRouting) {

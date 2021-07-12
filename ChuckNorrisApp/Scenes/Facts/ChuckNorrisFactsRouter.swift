@@ -10,13 +10,16 @@ import UIKit
 
 protocol ChuckNorrisFactsRouting: AnyObject {
     func navigateToSearch(delegate: SearchFactsDelegate)
+    func createChuckNorrisFactDetailsWith(_ fact: Fact) -> ChuckNorrisFactDetailsViewController
 }
 
 final class ChuckNorrisFactsRouter: Router, ChuckNorrisFactsRouting {
     let searchFactsBuilder: SearchFactsBuildable
+    let factDetailsBuilder: ChuckNorrisFactDetailsBuildable
     
-    init(searchFactsBuilder: SearchFactsBuildable) {
+    init(searchFactsBuilder: SearchFactsBuildable, factDetailsBuilder: ChuckNorrisFactDetailsBuildable) {
         self.searchFactsBuilder = searchFactsBuilder
+        self.factDetailsBuilder = factDetailsBuilder
     }
     
     func navigateToSearch(delegate: SearchFactsDelegate) {
@@ -26,5 +29,9 @@ final class ChuckNorrisFactsRouter: Router, ChuckNorrisFactsRouting {
             searchViewController,
             animated: true
         )
+    }
+    
+    func createChuckNorrisFactDetailsWith(_ fact: Fact) -> ChuckNorrisFactDetailsViewController {
+        return factDetailsBuilder.build(fact: fact) as! ChuckNorrisFactDetailsViewController
     }
 }

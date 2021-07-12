@@ -8,7 +8,7 @@
 import UIKit
 import IGListKit
 
-class FactsCell: UICollectionViewCell, NibLoadable {
+final class FactsCell: UICollectionViewCell, NibLoadable {
     static let defaultHeight: CGFloat = 130
     
     @IBOutlet weak var factsContainerView: UIView!

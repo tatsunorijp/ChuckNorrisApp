@@ -13,12 +13,14 @@ import RxSwift
 
 protocol ChuckNorrisFactsViewModelInput: AnyObject {
     var didSearchTextChange: PublishSubject<String> { get }
+    var didSelectFactId: PublishSubject<String> { get }
 }
 
 protocol ChuckNorrisFactsViewModelOutput: AnyObject {
     var isLoading: Driver<Bool> { get }
     var error: Driver<Error> { get }
     var encounteredFacts: Driver<[ChuckNorrisFactsViewModel.DisplayableModel]> { get }
+    var selectedFact: Driver<Fact> { get }
 }
 
 protocol ChuckNorrisFactsViewModelType: AnyObject {
@@ -28,13 +30,10 @@ protocol ChuckNorrisFactsViewModelType: AnyObject {
 
 final class ChuckNorrisFactsViewModel: ChuckNorrisFactsViewModelType, ChuckNorrisFactsViewModelInput, ChuckNorrisFactsViewModelOutput {
     
-    enum Consts {
-        static let quantityWordsBreakPoint = 80
-    }
-    
     let isLoading: Driver<Bool>
     let error: Driver<Error>
     let encounteredFacts: Driver<[DisplayableModel]>
+    var selectedFact: Driver<Fact>
     
     init(interactor: ChuckNorrisFactsInteractable) {
         let activityIndicator = ActivityIndicator()
@@ -43,56 +42,40 @@ final class ChuckNorrisFactsViewModel: ChuckNorrisFactsViewModelType, ChuckNorri
         let errorTracker = ErrorTracker()
         error = errorTracker.asDriver()
         
-//        encounteredFacts = didSearchTextChange.asDriverOnErrorJustComplete()
-//            .flatMap { searchTerm in
-//                interactor.fetchFacts()
-//                    .asDriver(trackActivityWith: activityIndicator, onErrorTrackWith: errorTracker)
-//            }
-//            .map { $0.map { factData in
-//                return DisplayableModel(
-//                    id: factData.id,
-//                    categories: factData.categories,
-//                    iconURL: factData.iconURL,
-//                    fact: factData.fact,
-//                    textSize: factData.fact.numberOfWords > Consts.quantityWordsBreakPoint
-//                        ? .small
-//                        : .large
-//                )
-//            }}
-        
-        encounteredFacts = didSearchTextChange.asDriverOnErrorJustComplete()
+        let encounteredFactsResponse = didSearchTextChange.asDriverOnErrorJustComplete()
             .flatMap { searchTerm in
                 interactor.fetchFacts(searchTerm: searchTerm)
                     .asDriver(trackActivityWith: activityIndicator, onErrorTrackWith: errorTracker)
             }
+        
+        encounteredFacts = encounteredFactsResponse
             .map { $0.map { factData in
                 return DisplayableModel(
                     id: factData.id,
                     categories: factData.categories,
-                    iconURL: "",
-                    fact: factData.value,
-                    textSize: factData.value.numberOfWords > Consts.quantityWordsBreakPoint ? .small : .large
+                    fact: factData.value
                 )
             }}
+        
+        selectedFact = didSelectFactId.asDriverOnErrorJustComplete()
+            .withLatestFrom(encounteredFactsResponse) { (selectedFactId: $0, facts: $1) }
+            .map { selectedFactId, facts in
+                facts.first(where: { $0.id == selectedFactId })
+            }
+            .skipNil()
     }
-
+    
     var input: ChuckNorrisFactsViewModelInput { return self }
     var output: ChuckNorrisFactsViewModelOutput { return self }
-
+    
     var didSearchTextChange: PublishSubject<String> = PublishSubject()
+    var didSelectFactId: PublishSubject<String> = PublishSubject()
 }
 
 extension ChuckNorrisFactsViewModel {
     struct DisplayableModel: Equatable {
         let id: String
         let categories: [String]
-        let iconURL: String
         let fact: String
-        let textSize: TextSize
-    }
-    
-    enum TextSize {
-        case small
-        case large
     }
 }

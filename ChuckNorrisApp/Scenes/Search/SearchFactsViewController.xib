@@ -45,7 +45,7 @@
                                             <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXB-ZO-soF" customClass="PrimaryButton" customModule="ChuckNorrisApp" customModuleProvider="target">
-                                            <rect key="frame" x="32" y="740" width="350" height="30"/>
+                                            <rect key="frame" x="32" y="756" width="350" height="30"/>
                                             <state key="normal" title="Button"/>
                                         </button>
                                     </subviews>
@@ -53,7 +53,7 @@
                                     <constraints>
                                         <constraint firstItem="ggg-pp-VNd" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="03s-SR-pH1"/>
                                         <constraint firstItem="Cop-Jr-klT" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="5wE-RJ-fwb"/>
-                                        <constraint firstAttribute="bottom" secondItem="TXB-ZO-soF" secondAttribute="bottom" constant="32" id="9nj-yf-KkG"/>
+                                        <constraint firstAttribute="bottom" secondItem="TXB-ZO-soF" secondAttribute="bottom" constant="16" id="9nj-yf-KkG"/>
                                         <constraint firstAttribute="trailing" secondItem="Cop-Jr-klT" secondAttribute="trailing" constant="32" id="BTA-DZ-EmK"/>
                                         <constraint firstItem="TXB-ZO-soF" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="Bar-k8-9dM"/>
                                         <constraint firstItem="TXB-ZO-soF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cop-Jr-klT" secondAttribute="bottom" constant="32" id="Khf-gS-cP0"/>
@@ -98,7 +98,7 @@
     </objects>
     <resources>
         <namedColor name="Gray500">
-            <color red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Orange400">
             <color red="1" green="0.45098039215686275" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

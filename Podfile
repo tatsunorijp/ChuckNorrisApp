@@ -26,6 +26,8 @@ target 'ChuckNorrisApp' do
 	# API
 	pod 'Alamofire'
 
+	pod 'FloatingPanel'
+
   target 'ChuckNorrisAppTests' do
     inherit! :search_paths
     # Pods for testing
