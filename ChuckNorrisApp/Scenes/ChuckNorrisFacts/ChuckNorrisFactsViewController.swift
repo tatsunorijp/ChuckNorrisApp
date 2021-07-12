@@ -48,10 +48,6 @@ final class ChuckNorrisFactsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        RxAlamofire.response(.get, "https://api.chucknorris.io/jokes/search", parameters: ["query": "aaa"])
-            .map { response in
-            }
     }
     
     override func bindViewModel() {

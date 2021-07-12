@@ -13,14 +13,16 @@ protocol ChuckNorrisFactsInteractable: AnyObject {
 }
 
 final class ChuckNorrisFactsInteractor: ChuckNorrisFactsInteractable {
-    struct ChuckNorrisFactMock: Equatable {
-        let id: String
-        let categories: [String]
-        let iconURL: String
-        let fact: String
-    }
+//    struct ChuckNorrisFactMock: Equatable {
+//        let id: String
+//        let categories: [String]
+//        let iconURL: String
+//        let fact: String
+//    }
     
     func fetchFacts(searchTerm: String) -> Single<[Fact]> {
+        // TODO: Comentario salvo pois sera usado futuramente para os testes
+        // que eu acabei esquecendo de fazer já :P
 //        return .just([
 //            ChuckNorrisFactMock(
 //                id: UUID().uuidString,
@@ -61,7 +63,7 @@ final class ChuckNorrisFactsInteractor: ChuckNorrisFactsInteractable {
 //        ]).delay(.seconds(2), scheduler: MainScheduler.instance)
         
         return ApiClient.getPosts(term: searchTerm)
-            .map { $0.result }
+            .map { $0.all }
             .asSingle()
     }
 }

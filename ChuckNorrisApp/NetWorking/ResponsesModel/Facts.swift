@@ -7,32 +7,22 @@
 
 import Foundation
 
-//struct Facts: Codable {
-//    let total: Int
-//    let result: [Fact]
-//}
-//
-//struct Fact: Codable {
-//    let categories: [String]
-//    let created_at: String
-//    let icon_url: String
-//    let id: String
-//    let updated_at: String
-//    let url: String
-//    let value: String
-//}
-
 class Facts: Codable {
     let total: Int
-    let result: [Fact]
+    let all: [Fact]
+    
+    enum CodingKeys: String, CodingKey {
+        case total
+        case all = "result"
+    }
 
-    init(total: Int, result: [Fact]) {
+    init(total: Int, all: [Fact]) {
         self.total = total
-        self.result = result
+        self.all = all
     }
 }
 
-// MARK: - Result
+// MARK: - All
 class Fact: Codable {
     let categories: [String]
     let createdAt: String
@@ -43,10 +33,10 @@ class Fact: Codable {
 
     enum CodingKeys: String, CodingKey {
         case categories
-        case createdAt
-        case iconURL
+        case createdAt = "created_at"
+        case iconURL = "icon_url"
         case id
-        case updatedAt
+        case updatedAt = "updated_at"
         case url, value
     }
 

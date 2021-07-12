@@ -38,7 +38,6 @@
 		0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA54622698E1E400ADB4EB /* LineTextField.swift */; };
 		0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */; };
 		0EC9081F269A1BCB009FE03A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9081E269A1BCB009FE03A /* Environment.swift */; };
-		0EC90821269A1C15009FE03A /* ChuckNorrisAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */; };
 		0EC90823269A1CF9009FE03A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90822269A1CF9009FE03A /* ApiRouter.swift */; };
 		0EC90826269A1EAF009FE03A /* Facts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90825269A1EAF009FE03A /* Facts.swift */; };
 		0EC90828269A1F46009FE03A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC90827269A1F46009FE03A /* ApiError.swift */; };
@@ -115,7 +114,6 @@
 		0EAA54622698E1E400ADB4EB /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		0EC9081B2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsEmptyView.swift; sourceTree = "<group>"; };
 		0EC9081E269A1BCB009FE03A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisAPI.swift; sourceTree = "<group>"; };
 		0EC90822269A1CF9009FE03A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		0EC90825269A1EAF009FE03A /* Facts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facts.swift; sourceTree = "<group>"; };
 		0EC90827269A1F46009FE03A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -308,7 +306,6 @@
 			children = (
 				0EC90824269A1E92009FE03A /* ResponsesModel */,
 				0EC9081E269A1BCB009FE03A /* Environment.swift */,
-				0EC90820269A1C15009FE03A /* ChuckNorrisAPI.swift */,
 				0EC90822269A1CF9009FE03A /* ApiRouter.swift */,
 				0EC90827269A1F46009FE03A /* ApiError.swift */,
 				0EC90829269A2115009FE03A /* ApiClient.swift */,
@@ -818,7 +815,6 @@
 				0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */,
 				0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */,
 				0870219F2696542E00117B68 /* AutoMockable.generated.swift in Sources */,
-				0EC90821269A1C15009FE03A /* ChuckNorrisAPI.swift in Sources */,
 				0E053DF22697340000803723 /* ChuckNorrisFactsInteractor.swift in Sources */,
 				0EE4423C26964D020093A9FA /* XCAssets+Generated.swift in Sources */,
 				087021B52696924900117B68 /* DiffableBox.swift in Sources */,
