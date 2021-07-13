@@ -11,9 +11,13 @@
 import RxCocoa
 import RxSwift
 
-protocol SearchFactsViewModelInput: AnyObject {}
+protocol SearchFactsViewModelInput: AnyObject {
+    var didSearchTermChange: PublishSubject<String> { get }
+}
 
-protocol SearchFactsViewModelOutput: AnyObject {}
+protocol SearchFactsViewModelOutput: AnyObject {
+    var isTermBiggerEnough: Driver<Bool> { get }
+}
 
 protocol SearchFactsViewModelType: AnyObject {
     var input: SearchFactsViewModelInput { get }
@@ -22,7 +26,20 @@ protocol SearchFactsViewModelType: AnyObject {
 
 final class SearchFactsViewModel: SearchFactsViewModelType, SearchFactsViewModelInput, SearchFactsViewModelOutput {
     
-    init(interactor: SearchFactsInteractable) {}
+    enum Consts {
+        static let minimunTermSize = 3
+    }
+    
+    var isTermBiggerEnough: Driver<Bool>
+    
+    init(interactor: SearchFactsInteractable) {
+        isTermBiggerEnough = didSearchTermChange.asDriverOnErrorJustComplete()
+            .map { $0.count >= Consts.minimunTermSize }
+            .distinctUntilChanged()
+            .startWith(false)
+    }
+    
+    var didSearchTermChange: PublishSubject<String> = PublishSubject()
 
     var input: SearchFactsViewModelInput { return self }
     var output: SearchFactsViewModelOutput { return self }

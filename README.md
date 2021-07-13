@@ -9,6 +9,7 @@ Consiste basicamente em consumir dados da API [ChuckNorrisAPI](https://api.chuck
 ### Como executar?
 Para executar clone o repositório e instale as dependências com o cocoa pods
 > git clone https://github.com/tatsunorijp/ChuckNorrisApp
+
 > pod install
 
 ### Dependências utilizadas:
@@ -23,9 +24,9 @@ Para executar clone o repositório e instale as dependências com o cocoa pods
 4.  [Swiftlint](https://github.com/realm/SwiftLint)
 - Ferramenta para assegurar identação e algumas boas práticas de programação
 5.  [IGListKit](https://github.com/Instagram/IGListKit)
-- Melhoramento de performace em listas (criado e utilizado pelo Instagram)
+- Melhoria de performace em listas (criado e utilizado pelo Instagram)
 6.  [TinyConstraints](https://github.com/roberthein/TinyConstraints)
-- Funções de constraint para View Code
+- Funções de constraints para ViewCode
 7.  [Alamofire](https://github.com/Alamofire/Alamofire)
 - Utilizado para criar a camade de networking
 
