@@ -40,6 +40,8 @@
 		0E617D43269DC2E6001ED17C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D42269DC2E6001ED17C /* DateFormatter.swift */; };
 		0E617D45269DC3A0001ED17C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D44269DC3A0001ED17C /* Date.swift */; };
 		0E617D47269DCEA1001ED17C /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D46269DCEA1001ED17C /* String+Date.swift */; };
+		0E617D4A269DF226001ED17C /* SearchFactsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D48269DF226001ED17C /* SearchFactsInteractorTests.swift */; };
+		0E617D4B269DF226001ED17C /* SearchFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D49269DF226001ED17C /* SearchFactsViewModelTests.swift */; };
 		0EAA5445269794F900ADB4EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA5444269794F900ADB4EB /* String.swift */; };
 		0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */; };
 		0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */; };
@@ -130,6 +132,8 @@
 		0E617D42269DC2E6001ED17C /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		0E617D44269DC3A0001ED17C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0E617D46269DCEA1001ED17C /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		0E617D48269DF226001ED17C /* SearchFactsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsInteractorTests.swift; sourceTree = "<group>"; };
+		0E617D49269DF226001ED17C /* SearchFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewModelTests.swift; sourceTree = "<group>"; };
 		0EAA5444269794F900ADB4EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 		0E0ABA2C269CD6D200BFA41E /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				0E617D48269DF226001ED17C /* SearchFactsInteractorTests.swift */,
+				0E617D49269DF226001ED17C /* SearchFactsViewModelTests.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -928,10 +934,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E617D4B269DF226001ED17C /* SearchFactsViewModelTests.swift in Sources */,
 				0E0ABA30269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift in Sources */,
 				0E0ABA31269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift in Sources */,
 				0E0ABA34269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift in Sources */,
 				0E0ABA35269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift in Sources */,
+				0E617D4A269DF226001ED17C /* SearchFactsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

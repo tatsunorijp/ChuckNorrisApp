@@ -61,6 +61,16 @@ final class SearchFactsViewController: BaseViewController {
     override func bindViewModel() {
         super.bindViewModel()
         
+        textField.rx.text.orEmpty
+            .bind(to: viewModel.input.didSearchTermChange)
+            .disposed(by: disposeBag)
+        
+        viewModel.output.isTermBiggerEnough
+            .drive { [weak self] isTermBiggerEnough in
+                self?.searchButton.isEnabled = isTermBiggerEnough
+            }
+            .disposed(by: disposeBag)
+        
         searchButton.rx.tap
             .bind { _ in
                 guard let delegate = self.delegate else { return }
