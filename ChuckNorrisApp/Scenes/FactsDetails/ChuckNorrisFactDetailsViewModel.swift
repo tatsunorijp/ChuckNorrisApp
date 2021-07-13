@@ -35,16 +35,9 @@ final class ChuckNorrisFactDetailsViewModel: ChuckNorrisFactDetailsViewModelType
     init(interactor: ChuckNorrisFactDetailsInteractable, fact: Fact) {
         selectedFact = onViewDidLoad.asDriverOnErrorJustComplete()
             .map { _ in
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "y-MM-dd H:m:ss.SSSSSS"
-                
-                if let date = dateFormatter.date(from: fact.createdAt) {
-                    print(date)
-                }
-                
                 return FactDisplayable(
                     categorie: fact.categories.first ?? "Uncategorizied",
-                    discoveredIn: fact.createdAt,
+                    discoveredIn: fact.createdAt.toDate(using: .iso8601).formatted(using: .complete),
                     value: fact.value,
                     textSize: fact.value.numberOfWords > Consts.numberOfWordsBreakPoint
                         ? .small
@@ -61,7 +54,7 @@ final class ChuckNorrisFactDetailsViewModel: ChuckNorrisFactDetailsViewModelType
 }
 
 extension ChuckNorrisFactDetailsViewModel {
-    struct FactDisplayable {
+    struct FactDisplayable: Equatable {
         let categorie: String
         let discoveredIn: String
         let value: String

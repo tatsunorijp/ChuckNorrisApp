@@ -30,20 +30,79 @@ final class ChuckNorrisFactDetailsViewModelTests: XCTestCase {
     private func setupWith(_ fact: Fact) {
         disposeBag = DisposeBag()
         interactor = ChuckNorrisFactDetailsInteractableMock()
-        sut = ChuckNorrisFactDetailsViewModel(
-            interactor: interactor,
-            fact: Fact(categories: [],
-                       createdAt: "",
-                       iconURL: "",
-                       id: "1",
-                       updatedAt: "",
-                       url: "",
-                       value: "234"
-            ))
+        sut = ChuckNorrisFactDetailsViewModel(interactor: interactor, fact: fact)
         
         let testScheduler = TestScheduler(initialClock: 0)
-        
         selectedFact = testScheduler.createObserver(ChuckNorrisFactDetailsViewModel.FactDisplayable.self)
         sut.output.selectedFact.drive(selectedFact).disposed(by: disposeBag)
+    }
+    
+    func test_shouldSelectedFactReturn_withCorrectFormat_andBigFont() {
+        setupWith(Fact(
+                    categories: ["Alcohol"],
+                    createdAt: "2020-01-05 13:42:25.628594",
+                    iconURL: "",
+                    id: "1",
+                    updatedAt: "",
+                    url: "",
+                    value: "Chuck Norris > Superman"
+        ))
+        
+        sut.input.onViewDidLoad.onNext(())
+        
+        XCTAssertEqual(selectedFact.events.compactMap { $0.value.element }, [
+            ChuckNorrisFactDetailsViewModel.FactDisplayable(
+                categorie: "Alcohol",
+                discoveredIn: "20 Jan 05 At 13:42",
+                value: "Chuck Norris > Superman",
+                textSize: .big
+            )
+        ])
+    }
+    
+    func test_shouldSelectedFactReturn_withCorrectFormat_withoutCategory() {
+        setupWith(Fact(
+                    categories: [],
+                    createdAt: "2020-01-05 13:42:25.628594",
+                    iconURL: "",
+                    id: "1",
+                    updatedAt: "",
+                    url: "",
+                    value: "Chuck Norris > Superman"
+        ))
+        
+        sut.input.onViewDidLoad.onNext(())
+        
+        XCTAssertEqual(selectedFact.events.compactMap { $0.value.element }, [
+            ChuckNorrisFactDetailsViewModel.FactDisplayable(
+                categorie: "Uncategorizied",
+                discoveredIn: "20 Jan 05 At 13:42",
+                value: "Chuck Norris > Superman",
+                textSize: .big
+            )
+        ])
+    }
+    
+    func test_shouldSelectedFactReturn_withCorrectFormat_andSmallFont() {
+        setupWith(Fact(
+                    categories: ["Alcohol"],
+                    createdAt: "2020-01-05 13:42:25.628594",
+                    iconURL: "",
+                    id: "1",
+                    updatedAt: "",
+                    url: "",
+                    value: "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 81"
+        ))
+        
+        sut.input.onViewDidLoad.onNext(())
+        
+        XCTAssertEqual(selectedFact.events.compactMap { $0.value.element }, [
+            ChuckNorrisFactDetailsViewModel.FactDisplayable(
+                categorie: "Alcohol",
+                discoveredIn: "20 Jan 05 At 13:42",
+                value: "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 81",
+                textSize: .small
+            )
+        ])
     }
 }
