@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-protocol SearchFactsDelegate {
+protocol SearchFactsDelegate: AnyObject {
     func searchFacts(term: String)
 }
 
@@ -26,7 +26,7 @@ final class SearchFactsViewController: BaseViewController {
     @IBOutlet private weak var bottomButtonConstraint: NSLayoutConstraint!
     @IBOutlet private weak var textField: LineTextField!
     
-    private var delegate: SearchFactsDelegate?
+    private weak var delegate: SearchFactsDelegate!
     
     private enum Consts {
         static let bottomButtonConstraintValue = CGFloat(16)

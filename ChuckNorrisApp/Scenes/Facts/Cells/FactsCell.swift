@@ -11,9 +11,9 @@ import IGListKit
 final class FactsCell: UICollectionViewCell, NibLoadable {
     static let defaultHeight: CGFloat = 130
     
-    @IBOutlet weak var factsContainerView: UIView!
+    @IBOutlet private weak var factsContainerView: UIView!
     @IBOutlet private weak var factLabel: UILabel!
-    @IBOutlet weak var moreButton: SmallPrimaryButton!
+    @IBOutlet private weak var moreButton: SmallPrimaryButton!
     
     var didSelectFact: ((String) -> Void)?
     private var id: String?
@@ -56,7 +56,7 @@ final class FactsSectionController: ListSectionController {
     
     override func didUpdate(to object: Any) {
         super.didUpdate(to: object)
-        guard let fact =  object as? DiffableBox<ChuckNorrisFactsViewModel.DisplayableModel> else { return }
+        guard let fact = object as? DiffableBox<ChuckNorrisFactsViewModel.DisplayableModel> else { return }
         self.fact = fact.value
     }
     

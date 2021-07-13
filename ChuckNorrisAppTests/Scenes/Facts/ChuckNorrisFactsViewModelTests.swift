@@ -66,7 +66,7 @@ final class ChuckNorrisFactsViewModelTests: XCTestCase {
         interactor.fetchFactsSearchTermReturnValue = .error(expectedError)
         sut.input.didSearchTextChange.onNext("a")
         
-        XCTAssertEqual(error.events.compactMap { $0.value.element as NSError?}, [expectedError])
+        XCTAssertEqual(error.events.compactMap { $0.value.element as NSError? }, [expectedError])
     }
     
     func test_encounteredFactsShoulReturn_with_correctFormat() {

@@ -47,7 +47,7 @@ enum ApiRouter: URLRequestConvertible {
     private var parameters: Parameters? {
             switch self {
             case .getFacts(let term):
-                return ["query" : term]
+                return ["query": term]
             }
         }
     

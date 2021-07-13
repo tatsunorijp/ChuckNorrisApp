@@ -21,7 +21,6 @@ class ApiClient {
                 observer.onError(ApiError.noInternetAccess)
             }
             
-            
             let request = AF.request(urlConvertible)
                 .responseDecodable(of: Facts.self) { response in
                     
