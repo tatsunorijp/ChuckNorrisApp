@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in ChuckNorrisFactDetailsViewController.bindViewModel():ChuckNorrisFactDetailsViewController.swift">
+         contextName = "closure #1 in ChuckNorrisFactDetailsViewModel.init(interactor:fact:):ChuckNorrisFactDetailsViewModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "fact.textSize">
+               value = "fact.createdAt">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

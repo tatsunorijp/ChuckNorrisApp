@@ -1,8 +1,8 @@
 //
-//  TestSceneViewModelTests.swift
+//  ChuckNorrisFactDetailsInteractorTests.swift
 //  ChuckNorrisApp
 //
-//  Created by Wellington Tatsunori Asahide on 07/07/21.
+//  Created by Tatsu on 12/07/21.
 //  Copyright © 2021 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
@@ -12,20 +12,20 @@ import RxSwift
 import RxTest
 import XCTest
 
-final class TestSceneViewModelTests: XCTestCase {
-    private var sut: TestSceneViewModel!
+final class ChuckNorrisFactDetailsInteractorTests: XCTestCase {
+    private var sut: ChuckNorrisFactDetailsInteractor!
     private var disposeBag: DisposeBag!
 
     override func setUp() {
         super.setUp()
-        setupTestSceneViewModel()
+        setupChuckNorrisFactDetailsInteractor()
     }
 
     override func tearDown() {
         super.tearDown()
     }
 
-    private func setupTestSceneViewModel() {
+    private func setupChuckNorrisFactDetailsInteractor() {
         disposeBag = DisposeBag()
     }
 

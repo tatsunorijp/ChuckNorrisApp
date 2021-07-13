@@ -14,8 +14,6 @@
 		087021B02696558C00117B68 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021A92696558C00117B68 /* BaseButton.swift */; };
 		087021B12696558C00117B68 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021AB2696558C00117B68 /* NavigationController.swift */; };
 		087021B52696924900117B68 /* DiffableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B42696924900117B68 /* DiffableBox.swift */; };
-		087021BA269699DD00117B68 /* TestSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */; };
-		087021BB269699DD00117B68 /* TestSceneViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */; };
 		0E053DE72697336500803723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE441E126963F4E0093A9FA /* LaunchScreen.storyboard */; };
 		0E053DEF2697340000803723 /* ChuckNorrisFactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */; };
 		0E053DF02697340000803723 /* ChuckNorrisFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */; };
@@ -35,6 +33,13 @@
 		0E0ABA26269C923C00BFA41E /* BaseFloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA25269C923C00BFA41E /* BaseFloatingPanelController.swift */; };
 		0E0ABA28269C961300BFA41E /* FloatingPanelGrabberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */; };
 		0E0ABA2A269CCF1400BFA41E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA29269CCF1400BFA41E /* UIView.swift */; };
+		0E0ABA30269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA2E269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift */; };
+		0E0ABA31269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA2F269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift */; };
+		0E0ABA34269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA32269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift */; };
+		0E0ABA35269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA33269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift */; };
+		0E617D43269DC2E6001ED17C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D42269DC2E6001ED17C /* DateFormatter.swift */; };
+		0E617D45269DC3A0001ED17C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D44269DC3A0001ED17C /* Date.swift */; };
+		0E617D47269DCEA1001ED17C /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D46269DCEA1001ED17C /* String+Date.swift */; };
 		0EAA5445269794F900ADB4EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA5444269794F900ADB4EB /* String.swift */; };
 		0EAA544D2698A56F00ADB4EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */; };
 		0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */; };
@@ -100,8 +105,6 @@
 		087021A92696558C00117B68 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		087021AB2696558C00117B68 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		087021B42696924900117B68 /* DiffableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBox.swift; sourceTree = "<group>"; };
-		087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneInteractorTests.swift; sourceTree = "<group>"; };
-		087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSceneViewModelTests.swift; sourceTree = "<group>"; };
 		0E053DE92697340000803723 /* ChuckNorrisFactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsRouter.swift; sourceTree = "<group>"; };
 		0E053DEA2697340000803723 /* ChuckNorrisFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewController.swift; sourceTree = "<group>"; };
 		0E053DEB2697340000803723 /* ChuckNorrisFactsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsBuilder.swift; sourceTree = "<group>"; };
@@ -120,6 +123,13 @@
 		0E0ABA25269C923C00BFA41E /* BaseFloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFloatingPanelController.swift; sourceTree = "<group>"; };
 		0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelGrabberView.swift; sourceTree = "<group>"; };
 		0E0ABA29269CCF1400BFA41E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		0E0ABA2E269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsInteractorTests.swift; sourceTree = "<group>"; };
+		0E0ABA2F269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewModelTests.swift; sourceTree = "<group>"; };
+		0E0ABA32269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsInteractorTests.swift; sourceTree = "<group>"; };
+		0E0ABA33269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		0E617D42269DC2E6001ED17C /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		0E617D44269DC3A0001ED17C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		0E617D46269DCEA1001ED17C /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		0EAA5444269794F900ADB4EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0EAA544C2698A56E00ADB4EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0EAA544E2698A5A300ADB4EB /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
@@ -253,18 +263,11 @@
 		087021B6269699B900117B68 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				087021B7269699C000117B68 /* Test */,
+				0E0ABA2D269CD6DB00BFA41E /* FactsDetails */,
+				0E0ABA2C269CD6D200BFA41E /* Search */,
+				0E0ABA2B269CD6C700BFA41E /* Facts */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		087021B7269699C000117B68 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				087021B8269699DD00117B68 /* TestSceneInteractorTests.swift */,
-				087021B9269699DD00117B68 /* TestSceneViewModelTests.swift */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		0E053DE8269733D500803723 /* Facts */ = {
@@ -319,6 +322,31 @@
 				0E0ABA27269C961300BFA41E /* FloatingPanelGrabberView.swift */,
 			);
 			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		0E0ABA2B269CD6C700BFA41E /* Facts */ = {
+			isa = PBXGroup;
+			children = (
+				0E0ABA2E269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift */,
+				0E0ABA2F269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift */,
+			);
+			path = Facts;
+			sourceTree = "<group>";
+		};
+		0E0ABA2C269CD6D200BFA41E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0E0ABA2D269CD6DB00BFA41E /* FactsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0E0ABA32269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift */,
+				0E0ABA33269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift */,
+			);
+			path = FactsDetails;
 			sourceTree = "<group>";
 		};
 		0EAA54502698C07700ADB4EB /* Search */ = {
@@ -470,6 +498,9 @@
 				0EE4421A269643280093A9FA /* UIViewController+Rx.swift */,
 				0EAA5444269794F900ADB4EB /* String.swift */,
 				0E0ABA29269CCF1400BFA41E /* UIView.swift */,
+				0E617D42269DC2E6001ED17C /* DateFormatter.swift */,
+				0E617D44269DC3A0001ED17C /* Date.swift */,
+				0E617D46269DCEA1001ED17C /* String+Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -840,6 +871,7 @@
 				0EE441D726963F4B0093A9FA /* AppDelegate.swift in Sources */,
 				0EE4421B269643280093A9FA /* NibLoadable.swift in Sources */,
 				0EE44214269642BA0093A9FA /* BaseInteractor.swift in Sources */,
+				0E617D43269DC2E6001ED17C /* DateFormatter.swift in Sources */,
 				0EAA54582698C09600ADB4EB /* SearchFactsViewController.swift in Sources */,
 				0E0ABA1E269C8FB000BFA41E /* ChuckNorrisFactDetailsRouter.swift in Sources */,
 				0EE441D926963F4B0093A9FA /* SceneDelegate.swift in Sources */,
@@ -851,10 +883,12 @@
 				0E0ABA21269C8FB000BFA41E /* ChuckNorrisFactDetailsInteractor.swift in Sources */,
 				0E0ABA2A269CCF1400BFA41E /* UIView.swift in Sources */,
 				0EC9082A269A2115009FE03A /* ApiClient.swift in Sources */,
+				0E617D47269DCEA1001ED17C /* String+Date.swift in Sources */,
 				0EC9081C2699D955009FE03A /* ChuckNorrisFactsEmptyView.swift in Sources */,
 				0E0ABA26269C923C00BFA41E /* BaseFloatingPanelController.swift in Sources */,
 				0EAA54632698E1E400ADB4EB /* LineTextField.swift in Sources */,
 				087021AC2696558C00117B68 /* BaseTextField.swift in Sources */,
+				0E617D45269DC3A0001ED17C /* Date.swift in Sources */,
 				0EAA544F2698A5A300ADB4EB /* SmallPrimaryButton.swift in Sources */,
 				0EC90823269A1CF9009FE03A /* ApiRouter.swift in Sources */,
 				0EE44221269643570093A9FA /* ErrorTracker.swift in Sources */,
@@ -894,8 +928,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087021BA269699DD00117B68 /* TestSceneInteractorTests.swift in Sources */,
-				087021BB269699DD00117B68 /* TestSceneViewModelTests.swift in Sources */,
+				0E0ABA30269CD73D00BFA41E /* ChuckNorrisFactsInteractorTests.swift in Sources */,
+				0E0ABA31269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift in Sources */,
+				0E0ABA34269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift in Sources */,
+				0E0ABA35269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

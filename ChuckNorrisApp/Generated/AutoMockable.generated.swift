@@ -28,3 +28,30 @@ import AppKit
 
 
 
+class ChuckNorrisFactDetailsInteractableMock: ChuckNorrisFactDetailsInteractable {
+
+}
+class ChuckNorrisFactsInteractableMock: ChuckNorrisFactsInteractable {
+
+    //MARK: - fetchFacts
+
+    var fetchFactsSearchTermCallsCount = 0
+    var fetchFactsSearchTermCalled: Bool {
+        return fetchFactsSearchTermCallsCount > 0
+    }
+    var fetchFactsSearchTermReceivedSearchTerm: String?
+    var fetchFactsSearchTermReceivedInvocations: [String] = []
+    var fetchFactsSearchTermReturnValue: Single<[Fact]>!
+    var fetchFactsSearchTermClosure: ((String) -> Single<[Fact]>)?
+
+    func fetchFacts(searchTerm: String) -> Single<[Fact]> {
+        fetchFactsSearchTermCallsCount += 1
+        fetchFactsSearchTermReceivedSearchTerm = searchTerm
+        fetchFactsSearchTermReceivedInvocations.append(searchTerm)
+        return fetchFactsSearchTermClosure.map({ $0(searchTerm) }) ?? fetchFactsSearchTermReturnValue
+    }
+
+}
+class SearchFactsInteractableMock: SearchFactsInteractable {
+
+}

@@ -50,6 +50,7 @@ final class ChuckNorrisFactsViewModel: ChuckNorrisFactsViewModelType, ChuckNorri
         
         encounteredFacts = encounteredFactsResponse
             .map { $0.map { factData in
+                print(factData.createdAt)
                 return DisplayableModel(
                     id: factData.id,
                     categories: factData.categories,

@@ -8,6 +8,7 @@
 
 import RxSwift
 
+// sourcery: AutoMockable
 protocol SearchFactsInteractable: AnyObject {
 }
 
