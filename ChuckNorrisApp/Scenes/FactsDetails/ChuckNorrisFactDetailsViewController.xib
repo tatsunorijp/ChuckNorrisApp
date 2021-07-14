@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -38,7 +37,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-22-KH2">
                                             <rect key="frame" x="32" y="97.5" width="350" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="Gray700"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvN-hW-8oP">
@@ -62,11 +61,11 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9k-Wq-13g">
                                             <rect key="frame" x="32" y="61" width="350" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="Black"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="White"/>
                                     <constraints>
                                         <constraint firstItem="RvN-hW-8oP" firstAttribute="leading" secondItem="AGI-JH-Yki" secondAttribute="leading" constant="32" id="0Dg-Ia-dE4"/>
                                         <constraint firstItem="plE-22-KH2" firstAttribute="top" secondItem="X9k-Wq-13g" secondAttribute="bottom" constant="16" id="2kN-cf-QnT"/>
@@ -84,7 +83,7 @@
                                     <state key="normal" title="Button"/>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" name="White"/>
                             <constraints>
                                 <constraint firstItem="ti4-Vr-WeF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AGI-JH-Yki" secondAttribute="bottom" constant="8" id="6wk-5I-Nrc"/>
                                 <constraint firstAttribute="bottom" secondItem="ti4-Vr-WeF" secondAttribute="bottom" constant="16" id="Jdh-8y-Qbd"/>
@@ -107,7 +106,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="White"/>
             <constraints>
                 <constraint firstItem="30E-Pn-uqy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CqA-8E-KCU"/>
                 <constraint firstItem="30E-Pn-uqy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="G9i-nJ-uZ7"/>
@@ -120,14 +119,17 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray700">
+            <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Orange300">
             <color red="1" green="0.59215686274509804" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

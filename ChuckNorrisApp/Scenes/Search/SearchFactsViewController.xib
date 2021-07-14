@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -49,7 +48,7 @@
                                             <state key="normal" title="Button"/>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="White"/>
                                     <constraints>
                                         <constraint firstItem="ggg-pp-VNd" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="03s-SR-pH1"/>
                                         <constraint firstItem="Cop-Jr-klT" firstAttribute="leading" secondItem="Wof-BK-lrm" secondAttribute="leading" constant="32" id="5wE-RJ-fwb"/>
@@ -74,7 +73,7 @@
                             <viewLayoutGuide key="frameLayoutGuide" id="LUR-42-w4U"/>
                         </scrollView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" name="White"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Cq4-oe-SYl" secondAttribute="bottom" id="Ib9-Ur-5gJ"/>
                         <constraint firstItem="Cq4-oe-SYl" firstAttribute="leading" secondItem="a4o-0N-7au" secondAttribute="leading" id="TAt-kb-cdZ"/>
@@ -103,8 +102,8 @@
         <namedColor name="Orange400">
             <color red="1" green="0.45098039215686275" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
