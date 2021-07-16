@@ -29,6 +29,8 @@ Para executar clone o repositório e instale as dependências com o cocoa pods
 - Funções de constraints para ViewCode
 7.  [Alamofire](https://github.com/Alamofire/Alamofire)
 - Utilizado para criar a camade de networking
+8. [Fastlane] (https://fastlane.tools/)
+- Para configuração de CI/CD (em produção)
 
 ## Arquitetura
 ### MVVM + RIBS
