@@ -49,7 +49,7 @@ Para executar clone o repositório e instale as dependências com o cocoa pods
 
 8. [Fastlane] (https://fastlane.tools/)
 
-- Para configuração de CI/CD (em produção)
+- Para configuração de CI/CD
 
   
 
@@ -99,3 +99,11 @@ Criado pelo Gigante [Guilherme Souza](https://www.linkedin.com/in/grsouza/)
 ## CI/CD
 Para a configuração de CI foi utilizado fastlane com a nova versão esrita em swift. Para ver mais detalhes da implementação acesse a pasta fastlane/swift/FastlaneSwiftRunner e abra o arquivo .xcodeproj, lembrando que esta é apenas uma simulação do CI.
 A parte do CD infelizmente não foi configurado devido a que é necessário uma conta de desenvolvedor da apple (100$ D: )
+
+Caso queria testar, intale o fastlane com o seguinte comando:
+
+> brew install fastlane
+
+e na pasta raiz do projeto execute o comando
+
+> fastlane runAllCi
