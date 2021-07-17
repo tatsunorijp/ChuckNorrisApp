@@ -28,6 +28,7 @@ final class ChuckNorrisFactDetailsViewModel: ChuckNorrisFactDetailsViewModelType
     
     enum Consts {
         static let numberOfWordsBreakPoint = 80
+        static let uncategorizied = "Uncategorizied"
     }
     
     var selectedFact: Driver<ChuckNorrisFactDetailsViewModel.FactDisplayable>
@@ -36,7 +37,7 @@ final class ChuckNorrisFactDetailsViewModel: ChuckNorrisFactDetailsViewModelType
         selectedFact = onViewDidLoad.asDriverOnErrorJustComplete()
             .map { _ in
                 return FactDisplayable(
-                    categorie: fact.categories.first ?? "Uncategorizied",
+                    categorie: fact.categories.first ?? Consts.uncategorizied,
                     discoveredIn: fact.createdAt.toDate(using: .iso8601).formatted(using: .complete),
                     value: fact.value,
                     textSize: fact.value.numberOfWords > Consts.numberOfWordsBreakPoint
