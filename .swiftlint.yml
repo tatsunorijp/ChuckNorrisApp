@@ -49,6 +49,7 @@ opt_in_rules:
 excluded:
   - Pods
   - ChuckNorrisApp/Generated
+  - fastlane
 analyzer_rules:
     - unused_import
     - unused_declaration

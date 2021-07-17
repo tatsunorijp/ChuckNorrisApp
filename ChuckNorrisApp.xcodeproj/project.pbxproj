@@ -37,6 +37,7 @@
 		0E0ABA31269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA2F269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift */; };
 		0E0ABA34269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA32269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift */; };
 		0E0ABA35269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABA33269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift */; };
+		0E3AB38426A357A000481308 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E3AB38326A357A000481308 /* GoogleService-Info.plist */; };
 		0E617D43269DC2E6001ED17C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D42269DC2E6001ED17C /* DateFormatter.swift */; };
 		0E617D45269DC3A0001ED17C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D44269DC3A0001ED17C /* Date.swift */; };
 		0E617D47269DCEA1001ED17C /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E617D46269DCEA1001ED17C /* String+Date.swift */; };
@@ -129,6 +130,7 @@
 		0E0ABA2F269CD73D00BFA41E /* ChuckNorrisFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsViewModelTests.swift; sourceTree = "<group>"; };
 		0E0ABA32269CDD9100BFA41E /* ChuckNorrisFactDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsInteractorTests.swift; sourceTree = "<group>"; };
 		0E0ABA33269CDD9100BFA41E /* ChuckNorrisFactDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		0E3AB38326A357A000481308 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E617D42269DC2E6001ED17C /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		0E617D44269DC3A0001ED17C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0E617D46269DCEA1001ED17C /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 				0EE4420B269642040093A9FA /* Utilities */,
 				0EE4420C2696420D0093A9FA /* Scenes */,
 				087021A12696554C00117B68 /* Components */,
+				0E3AB38326A357A000481308 /* GoogleService-Info.plist */,
 				0EE441E426963F4E0093A9FA /* Info.plist */,
 			);
 			path = ChuckNorrisApp;
@@ -673,6 +676,7 @@
 				0E053DF42697340000803723 /* ChuckNorrisFactsViewController.xib in Resources */,
 				0E0ABA23269C8FB000BFA41E /* ChuckNorrisFactDetailsViewController.xib in Resources */,
 				0EE44236269648130093A9FA /* AutoMockable.stencil in Resources */,
+				0E3AB38426A357A000481308 /* GoogleService-Info.plist in Resources */,
 				0EAA545C2698C09600ADB4EB /* SearchFactsViewController.xib in Resources */,
 				0E053DFD2697511100803723 /* FactsCell.xib in Resources */,
 			);

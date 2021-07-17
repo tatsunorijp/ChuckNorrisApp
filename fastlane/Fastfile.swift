@@ -9,9 +9,23 @@
 import Foundation
 
 class Fastfile: LaneFile {
-	func customLane() {
-	desc("Description of what the lane does")
-		// add actions here: https://docs.fastlane.tools/actions
+    func buildLane() {
+        desc("Building and Testing the app")
         scan()
-	}
+    }
+    
+    func lintLane() {
+        desc("SwiftLint fine comb")
+        swiftlint()
+    }
+    
+    func runAllCi() {
+        buildLane()
+        swiftlint()
+    }
+    
+    // Precisa de conta developper na appstore ;(
+//    func publishAppStoreLane(withOptions options:[String: String]?) {
+//        desc("Publish app FireBase")
+//    }
 }
