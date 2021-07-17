@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ChuckNorrisAppTests.xctest' tests='11' failures='0'>
+  <testsuite name='ChuckNorrisAppTests.ChuckNorrisFactDetailsInteractorTests' tests='1' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactDetailsInteractorTests' name='testExample' time='0.005'/>
+  </testsuite>
+  <testsuite name='ChuckNorrisAppTests.ChuckNorrisFactDetailsViewModelTests' tests='3' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactDetailsViewModelTests' name='test_shouldSelectedFactReturn_withCorrectFormat_andBigFont' time='0.005'/>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactDetailsViewModelTests' name='test_shouldSelectedFactReturn_withCorrectFormat_andSmallFont' time='0.001'/>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactDetailsViewModelTests' name='test_shouldSelectedFactReturn_withCorrectFormat_withoutCategory' time='0.001'/>
+  </testsuite>
+  <testsuite name='ChuckNorrisAppTests.ChuckNorrisFactsInteractorTests' tests='1' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactsInteractorTests' name='testExample' time='0.001'/>
+  </testsuite>
+  <testsuite name='ChuckNorrisAppTests.ChuckNorrisFactsViewModelTests' tests='4' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactsViewModelTests' name='test_encounteredFactsShoulReturn_with_correctFormat' time='0.003'/>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactsViewModelTests' name='test_errorShouldReturn' time='0.002'/>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactsViewModelTests' name='test_isLoadingShouldToggle' time='0.002'/>
+    <testcase classname='ChuckNorrisAppTests.ChuckNorrisFactsViewModelTests' name='test_selectedFactShouldReturn_id_from_selectedFact' time='0.002'/>
+  </testsuite>
+  <testsuite name='ChuckNorrisAppTests.SearchFactsInteractorTests' tests='1' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.SearchFactsInteractorTests' name='testExample' time='0.001'/>
+  </testsuite>
+  <testsuite name='ChuckNorrisAppTests.SearchFactsViewModelTests' tests='1' failures='0'>
+    <testcase classname='ChuckNorrisAppTests.SearchFactsViewModelTests' name='test_shouldIsTermBiggerEnoughtToggle_whenTermChange' time='0.001'/>
+  </testsuite>
+</testsuites>

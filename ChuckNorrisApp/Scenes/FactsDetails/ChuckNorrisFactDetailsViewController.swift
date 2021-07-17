@@ -39,7 +39,7 @@ final class ChuckNorrisFactDetailsViewController: BaseViewController {
         viewModel.input.onViewDidLoad.onNext(())
     }
     
-    override func bindViewModel() {
+    override func bindViewModel(){
         super.bindViewModel()
         
         viewModel.output.selectedFact
