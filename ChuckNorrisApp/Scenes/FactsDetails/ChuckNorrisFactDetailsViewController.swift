@@ -39,7 +39,7 @@ final class ChuckNorrisFactDetailsViewController: BaseViewController {
         viewModel.input.onViewDidLoad.onNext(())
     }
     
-    override func bindViewModel(){
+    override func bindViewModel() {
         super.bindViewModel()
         
         viewModel.output.selectedFact
@@ -69,7 +69,7 @@ final class ChuckNorrisFactDetailsViewController: BaseViewController {
     
     override func prepare() {
         super.prepare()
-        shareButton.setTitle(L10n.ChuckNorrisFactDetails.Button.share, for: .normal)
+        prepareButton()
         categoryContentView.layer.masksToBounds = true
         categoryContentView.layer.cornerRadius = categoryContentView.frame.size.height / 2
         
@@ -80,6 +80,12 @@ final class ChuckNorrisFactDetailsViewController: BaseViewController {
             bottom: 16,
             right: 0
         )
+    }
+    
+    private func prepareButton() {
+        shareButton.setTitle(L10n.ChuckNorrisFactDetails.Button.share, for: .normal)
+        shareButton.isEnabled = true
+        
         let shareIcon = UIImage(asset: Asset.Assets.share)
         shareButton.semanticContentAttribute = .forceRightToLeft
         shareButton.imageView?.contentMode = .scaleAspectFit
