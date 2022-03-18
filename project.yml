@@ -9,6 +9,13 @@ targets:
     platform: iOS
     sources:
       - path: ChuckNorrisApp
+    preBuildScripts:
+        - name: Swiftlint
+          script: swiftlint
+        - name: swiftgen
+          script: swiftgen
+        - name: sourcery
+          script: sourcery
     scheme:
         testTargets:
         - ChuckNorrisAppTests
