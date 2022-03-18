@@ -4,17 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FloatingPanel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IGListDiffKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>IGListKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ChuckNorrisApp-ChuckNorrisAppUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -60,6 +65,11 @@
 			<false/>
 		</dict>
 		<key>SwiftLint.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TinyConstraints.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

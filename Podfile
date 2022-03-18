@@ -34,8 +34,4 @@ target 'ChuckNorrisApp' do
 	pod 'RxTest'
   end
 
-  target 'ChuckNorrisAppUITests' do
-    # Pods for testing
-  end
-
 end

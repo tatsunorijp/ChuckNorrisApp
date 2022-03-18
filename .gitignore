@@ -1,0 +1,15 @@
+
+## Build generated
+build/
+DerivedData/
+.derivedData/
+.deploy
+*.xcarchive
+
+## Ignore project files as we generate them with xcodegen
+*.xcodeproj
+*.xcworkspace
+
+Pods/
+
+ChuckNorrisApp/Generated/

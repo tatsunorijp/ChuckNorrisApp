@@ -1,0 +1,21 @@
+name: ChuckNorrisApp
+options:
+  bundleIdPrefix: com.tatsunori
+  deploymentTarget:
+    iOS: 13.0
+targets:
+  ChuckNorrisApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: ChuckNorrisApp
+    scheme:
+        testTargets:
+        - ChuckNorrisAppTests
+  ChuckNorrisAppTests:
+    type: bundle.unit-test
+    deploymentTarget:
+        iOS: 13.0
+    platform: iOS
+    sources:
+        - path: ChuckNorrisAppTests
