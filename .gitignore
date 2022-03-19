@@ -4,7 +4,7 @@ DerivedData/
 .derivedData/
 .deploy
 *.xcarchive
-*.DS_Store
+.DS_Store
 
 ## Ignore project files as we generate them with xcodegen
 *.xcodeproj
