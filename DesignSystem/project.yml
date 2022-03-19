@@ -1,0 +1,24 @@
+name: DesignSystem
+options:
+  bundleIdPrefix: com.tatsunori
+  deploymentTarget:
+    iOS: 13.0
+targets:
+  DesignSystem:
+    type: application
+    platform: iOS
+    sources:
+      - path: DesignSystem
+    scheme:
+        testTargets:
+        - DesignSystemTests
+  DesignSystemTests:
+    type: bundle.unit-test
+    deploymentTarget:
+        iOS: 13.0
+    platform: iOS
+    #set the host applications for tests
+    dependencies:
+        - target: DesignSystem
+    sources:
+        - path: DesignSystemTests

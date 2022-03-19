@@ -19,6 +19,10 @@ targets:
     scheme:
         testTargets:
         - ChuckNorrisAppTests
+    dependencies:
+        - target: DesignSystem
+          project: DesignSystem/DesignSystem.xcodeproj
+          
   ChuckNorrisAppTests:
     type: bundle.unit-test
     deploymentTarget:
@@ -29,3 +33,9 @@ targets:
         - target: ChuckNorrisApp
     sources:
         - path: ChuckNorrisAppTests
+  
+  DesignSystem:
+    type: framework
+    platform: iOS
+    sources:
+        - path: DesignSystem
