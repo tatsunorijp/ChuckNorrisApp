@@ -24,5 +24,8 @@ targets:
     deploymentTarget:
         iOS: 13.0
     platform: iOS
+    #set the host applications for tests
+    dependencies:
+        - target: ChuckNorrisApp
     sources:
         - path: ChuckNorrisAppTests
